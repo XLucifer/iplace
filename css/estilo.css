@@ -1,3 +1,70 @@
 /**************************
 Autor: André Luz da Silva;
 ***************************/
+
+/********************
+	BACKGROUNDS
+********************/
+
+/*lojas*/
+
+#lojas {
+	background:url(../img/background/bg-lojas.jpg) no-repeat fixed center top;
+	position: relative;
+	min-height: 599px;
+}
+.box-lojas {
+	background:rgba(255,255,255,.95);
+	overflow: hidden;
+	padding:30px 0;
+}
+
+/*********************
+	TITULOS
+*********************/
+.tt-encontre {
+	padding:0;
+	margin:0;
+	font:19px arial;
+	color:#333;
+}
+
+/*********************
+	ESTADOS
+*********************/
+.sel-estados,
+.list-estados {display: none;}
+
+@media (min-width: 320px) and (max-width: 813px) {
+	.sel-estados {display: block;}
+}
+
+@media (min-width: 814px) {
+	.list-estados {
+		display: block;
+		width:814px;
+		margin:0 auto;
+		list-style: none;
+		overflow: hidden;
+		padding:17px 0 36px 0;
+	}
+}
+
+
+.list-estados li {
+	float: left;
+	width:58px;
+	height: 53px;
+	border:1px solid #ccc;
+	border-left:0;
+}
+.list-estados li:first-child {border-left: 1px solid #ccc;}
+.list-estados a {
+	display: block;
+	text-align: center;
+	font:18px/53px Arial;
+	color:#999;
+}
+.list-estados a:hover {
+	text-decoration: none;
+}
