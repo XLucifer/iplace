@@ -37,6 +37,7 @@ Autor: André Luz da Silva;
 	margin: 42px auto 0;
 	text-indent: -9000em;
 	display: none;
+	opacity: 0;
 }
 
 /*vantagem*/
@@ -129,6 +130,7 @@ Autor: André Luz da Silva;
 	font:32px arial;
 	padding-top: 45px;
 	margin:0;
+	opacity: 0;
 }
 .perguntas .panel-title {
 	font:20px arial;
@@ -190,6 +192,7 @@ Autor: André Luz da Silva;
 	height: 1px;
 	border-top:1px solid #B8CF2E;
 }
+#planos hr {opacity: 0;}
 /*toda linha*/
 .toda-linha h3 {
 	font: 42px arial;
@@ -227,6 +230,7 @@ Autor: André Luz da Silva;
 }
 
 #vantagem h3 {
+	opacity: 0;
 	font: 30px arial;
 	color:#333;
 	margin:0;
@@ -272,6 +276,7 @@ Autor: André Luz da Silva;
 	color:#333;
 	padding-top: 54px;
 	margin-top: 0;
+	opacity: 0;
 }
 
 @media (min-width: 1200px) {
@@ -1003,6 +1008,8 @@ hr.container {padding:0;}
 	color:#98AD08;
 }
 
+.intro article {opacity: 0;}
+
 .intro article p {
 	width:302px;
 	font: 16px/25px arial;
@@ -1023,7 +1030,7 @@ hr.container {padding:0;}
 	.intro article {
 		margin-left: 30px;
 		position: absolute;
-		top:32%;
+		top:24%;
 		-webkit-transform: translateY(-50%);
 		-ms-transform: translateY(-50%);
 		-o-transform: translateY(-50%);
@@ -1092,12 +1099,14 @@ hr.container {padding:0;}
 	transform: translateX(-50%);
 }
 .descubra p {
+	opacity: 0;
 	color:#fff;
 	text-align: center;
 	font: 30px arial;
 	padding: 44px 0;
 }
 .txt-consorcio {
+	opacity: 0;
 	color:#fff;
 	font:20px/35px arial;
 	text-align: center;
@@ -1127,6 +1136,7 @@ hr.container {padding:0;}
 	list-style: none;
 	text-align: center;
 }
+#vantagem ul {opacity: 0;}
 @media (min-width: 1200px) {
 	#vantagem ul {
 		width:917px;
@@ -1165,7 +1175,7 @@ hr.container {padding:0;}
 	.box-vantagem .store2 {padding-left: 102px;}	
 }
 
-.box-vantagem div {padding: 0;}
+.box-vantagem div {padding: 0; opacity: 0;}
 .box-vantagem .btn {
 	border-color:#fff;
 	color:#fff;
@@ -1192,6 +1202,7 @@ hr.container {padding:0;}
 	color:#333;
 	overflow: hidden;
 	margin:0 auto;
+	opacity: 0;
 }
 @media (min-width: 1200px) {
 	#planos p {
@@ -1205,6 +1216,7 @@ hr.container {padding:0;}
 	clear: both;
 	overflow: hidden;
 	padding:44px 0;
+	opacity: 0;
 }
 @media (min-width: 1200px) {
 	.iphone-planos {padding: 55px 26px 44px 26px;}
@@ -1215,6 +1227,7 @@ hr.container {padding:0;}
 .mac-planos {
 	margin-bottom: 40px;
 	overflow: hidden;
+	opacity: 0;
 }
 .mac-planos figure {
 	margin-top: 50px;
@@ -1251,6 +1264,7 @@ hr.container {padding:0;}
 
 /*perguntas*/
 .perguntas {
+	opacity: 0;
 	margin-top: 39px;
 }
 .panel.dark,
@@ -1440,8 +1454,6 @@ hr.container {padding:0;}
 	}
 	.box-fique-atento {padding:0;}
 }
-
-
 .regras { background: url(../img/sprite/bg-regras.png) no-repeat top left; width: 45px; height: 39px;  } 
 .regras.a { background-position: 0 0; height: 45px; } 
 .regras.b { background-position: -85px 0; width: 55px; } 
@@ -1450,3 +1462,8 @@ hr.container {padding:0;}
 .regras.e { background-position: -380px 0; width: 56px; height: 49px; } 
 .regras.f { background-position: -476px 0; height: 45px; } 
 .regras.g { background-position: -561px 0; width: 49px; height: 48px; } 
+
+/*seguro easy*/
+#inicio.introB {
+	background:url(../img/background/bg-intro2.jpg) repeat;
+}
