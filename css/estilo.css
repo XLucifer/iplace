@@ -127,10 +127,9 @@ Autor: André Luz da Silva;
 	TITULOS
 *********************/
 #duvidas h3 {
-	font:32px arial;
+	font:400 32px "Open Sans";
 	padding-top: 45px;
 	margin:0;
-	opacity: 0;
 }
 .perguntas .panel-title {
 	font:20px arial;
@@ -231,7 +230,7 @@ Autor: André Luz da Silva;
 
 #vantagem h3 {
 	opacity: 0;
-	font: 30px arial;
+	font:400 30px "Open Sans";
 	color:#333;
 	margin:0;
 	padding-top: 44px;
@@ -271,8 +270,25 @@ Autor: André Luz da Silva;
 }
 
 /*planos*/
+@media (min-width: 1200px) {
+	#planos {}
+	#planos .footer-planos {
+		height: 180px;
+		position: relative;
+	}
+	#planos .footer-planos .box-vantagem {
+		position: absolute;
+		top:50%;
+		left: 50%;
+		-webkit-transform: translate(-50%,-50%);
+		-ms-transform: translate(-50%,-50%);
+		-o-transform: translate(-50%,-50%);
+		transform: translate(-50%,-50%);
+	}
+}
+
 #planos h3 {
-	font:32px arial;
+	font:400 32px "Open Sans";
 	color:#333;
 	padding-top: 54px;
 	margin-top: 0;
@@ -907,6 +923,7 @@ hr.container {padding:0;}
 .menu-institucional {
 	margin-top: 40px;
 	margin-bottom: 24px;
+	display: none;
 }
 @media (min-width: 1200px) {
 	.menu-institucional {margin-bottom: 0;}
@@ -935,6 +952,7 @@ hr.container {padding:0;}
 }
 
 /*menu principal*/
+.menu-principal {z-index: 1;}
 .menu-principal ul {padding:0;}
 .menu-principal li {
 	height: 61px;
@@ -949,10 +967,18 @@ hr.container {padding:0;}
 	text-transform: uppercase;
 	font:bold 12px/65px arial;
 	text-align: center;
-	letter-spacing: 3px;
+	letter-spacing: 1px;
 }
 .menu-principal .ativo  a:visited
 .menu-principal .ativo  a:focus {text-decoration: none;}
+
+.menu-principal li.ativo a::after {
+	content:"";
+	background: #fff;
+	height: 5px;
+	display: block;
+	margin-top: -4px;
+}
 
 @media (min-width: 1200px) {
 	.menu-principal {
@@ -984,18 +1010,30 @@ hr.container {padding:0;}
 		margin-top: 15px;
 		float: left;
 	}
-	.menu-principal .ativo a::before,
-	.menu-principal li:nth-child(2) a::before {background:none;} 
+	/*.menu-principal .ativo a::before,
+	.menu-principal li:nth-child(2) a::before {background:none;} */
 }
+
+/*
+	consorcio
+*/
 
 /*intro*/
 .intro {
 	position: relative;
 }
+.barra-ativo {
+	background: #fff;
+	height: 5px;
+	clear: both;
+	position: absolute;
+	left:15px;
+	bottom: -5px;
+}
 .box-consorcio .btn {
-	border-color:#333;
+	border-color:#98AD08;
 	font:12px arial;
-	color:#333;
+	color:#98AD08;
 	text-transform: uppercase;
 	width:104px;
 	background: none;
@@ -1004,8 +1042,8 @@ hr.container {padding:0;}
 }
 .box-consorcio .btn:hover {
 	background: none;
-	border-color:#98AD08;
-	color:#98AD08;
+	border-color:#333;
+	color:#333;
 }
 
 .intro article {opacity: 0;}
@@ -1102,7 +1140,7 @@ hr.container {padding:0;}
 	opacity: 0;
 	color:#fff;
 	text-align: center;
-	font: 30px arial;
+	font:300 30px "Open Sans";
 	padding: 44px 0;
 }
 .txt-consorcio {
@@ -1177,21 +1215,21 @@ hr.container {padding:0;}
 
 .box-vantagem div {padding: 0; opacity: 0;}
 .box-vantagem .btn {
-	border-color:#fff;
-	color:#fff;
+	border-color:#9ACC00;
+	color:#9ACC00;
 	background: none;
-	font:12px/30px arial;
+	font:15px/30px arial;
 	width:130px;
 	height: 30px;
 	text-transform: uppercase;
 	padding:0;
 }
 .box-vantagem .btn:hover {
-	border-color:#B0E12A;
-	color:#B0E12A;
+	border-color:#fff;
+	color:#fff;
 }
 .footer-planos .box-vantagem .btn {
-	width: 150px;
+	width: 203px;
 	height: 50px;
 	line-height: 50px;
 }
@@ -1264,7 +1302,7 @@ hr.container {padding:0;}
 
 /*perguntas*/
 .perguntas {
-	opacity: 0;
+	
 	margin-top: 39px;
 }
 .panel.dark,

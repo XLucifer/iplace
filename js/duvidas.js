@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	barraAtivo();
 	tween();
 
 	/********************************
@@ -10,10 +11,7 @@ $(document).ready(function(){
     	$(e.target)
         .prev('.panel-heading')
         .find("i.indicator")
-        .toggleClass('claro escuro');
-
-        $(e.target).parent(".panel").toggleClass("dark");
-        
+        .toggleClass('claro escuro');       
 	}
 		$('#accordion').on('hidden.bs.collapse', toggleChevron);
 		$('#accordion').on('shown.bs.collapse', toggleChevron);
@@ -30,6 +28,16 @@ $(document).ready(function(){
 		
 		return false;
 	});	
+
+	$(".panel").hover(
+    	function(){
+    		$(this).addClass("dark");
+    		$(".claro").addClass("escuro").removeClass("claro");
+    	},
+    	function(){
+    		$(this).removeClass("dark");
+    		$(".escuro").addClass("claro").removeClass("escuro");
+    });
 });
 
 function tween(){
@@ -40,7 +48,7 @@ function tween(){
 		var e4 = $("#vantagem").offset().top;
 		var e5 = $(".box-vantagem").offset().top;
 		var e6 = $("#planos").offset().top;
-		var e7 = $("#duvidas").offset().top;
+		
 
 		if($(window).scrollTop() + ($(window).height() / 5 + 200) > e1 && !$('.box-consorcio').hasClass('anim') ){
            $('.box-consorcio').addClass('anim');
@@ -72,12 +80,13 @@ function tween(){
             TweenMax.fromTo($(".mac-planos"), .9, {y: 80, z: 1, alpha: 0}, {y: 0, z: 0, alpha: 1, ease: Quart.easeOut});
             TweenMax.fromTo($(".iphone-planos"), .99, {y: 80, z: 1, alpha: 0}, {y: 0, z: 0, alpha: 1, ease: Quart.easeOut});
         }
-        if($(window).scrollTop() + ($(window).height() / 5 + 200) > e7 && !$('#duvidas').hasClass('anim') ){
-           $('#duvidas').addClass('anim');
-            TweenMax.fromTo($("#duvidas h3"), .99, {y: 80, z: 1, alpha: 0}, {y: 0, z: 0, alpha: 1, ease: Quart.easeOut});
-            TweenMax.fromTo($("#duvidas h3 + hr"), .99, {y: 80, z: 1, alpha: 0}, {y: 0, z: 0, alpha: 1, ease: Quart.easeOut});
-            TweenMax.fromTo($(".perguntas"), .99, {y: 80, z: 1, alpha: 0}, {y: 0, z: 0, alpha: 1, ease: Quart.easeOut});
-            
-        }
+        
 	});
+}
+
+// barra ativo
+function barraAtivo(){
+	$(".barra-ativo").width($(".ativo").width());
+	var ativo = $(".ativo").offset().left;
+	$(".barra-ativo").css("left",ativo);
 }
