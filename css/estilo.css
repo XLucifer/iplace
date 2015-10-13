@@ -1218,12 +1218,13 @@ hr.container {padding:0;}
 	border-color:#9ACC00;
 	color:#9ACC00;
 	background: none;
-	font:15px/30px arial;
+	font:12px/30px arial;
 	width:130px;
 	height: 30px;
 	text-transform: uppercase;
 	padding:0;
 }
+.footer-planos .btn {font-size: 15px;}
 .box-vantagem .btn:hover {
 	border-color:#fff;
 	color:#fff;
