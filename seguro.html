@@ -2,27 +2,27 @@
 <html lang="pt-BR">
 	<head>
 		<meta charset="UTF-8">
-		<title>Consórcio</title>
+		<title>Seguro Easy</title>
 		<meta name="viewport" content="width=device-width, user-scalable=no">
+		
+		<!-- css icones  -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+		
+		<!-- font PT Sans -->
 		<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+		<!-- font Open Sans -->
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+
+		<!-- css bootstrap -->
 		<link rel="stylesheet" href="css/bootstrap.css">
+		<!-- css padrao -->
 		<link rel="stylesheet" href="css/estilo.css">
+		<!-- css seguro easy -->
+		<link rel="stylesheet" href="css/seguro-easy.css">
 	</head>
 	<body>
 		
-		<section class="">
-			<div class="container">
-				<!-- menu -->
-				<nav class="menu-institucional">
-					<ul class="">
-						<li><a href="#" title="Home">Home</a></li>
-						<li><a href="#" title="Seguro Easy">Seguro Easy</a></li>
-					</ul>
-				</nav>
-				<!-- /menu -->
-			</div>
+		<section class="">		
 
 			<!-- menu principal -->
 			<nav class="menu-principal container">
@@ -33,8 +33,8 @@
 					<li>
 						<a href="#beneficios" id="" class="">BENEFÍCIOS</a>
 					</li>
-					<li><a href="#planos" id="" class="">COMO ACIONAR O SEGURO</a></li>
-					<li><a href="#duvidas" id="" class="">CONTRATE AGORA</a></li>
+					<li><a href="#acionar" id="" class="">COMO ACIONAR O SEGURO</a></li>
+					<li><a href="#contrate" id="" class="">CONTRATE AGORA</a></li>
 				</ul>
 			</nav>
 			<!-- /menu principal -->
@@ -42,12 +42,12 @@
 			<!-- conteudos -->
 			<section id="inicio" class="introB">
 				<!-- INTRO -->
-				<div class="intro">
-					<div class="container">
-						<div class="box-consorcio">
-							<h3>Conheça os benefícios do</h3>
-							<h2>Seguro Easy</h2>
-						</div>												
+				<div class="">
+					<div class="box-beneficios">
+						<header class="topo-beneficios">
+							<h3 class="text-center">Conheça os benefícios do</h3>
+							<h2 class="text-center">Seguro Easy</h2>						
+						</header>
 					</div>
 					<footer class="footer-intro">
 						<div class="container">
@@ -59,8 +59,8 @@
 							</div>
 						</div>
 						<div class="container">
-							<div class="col-lg-6">
-								<figure></figure>
+							<div class="col-lg-6 line">
+								<figure class="proteja a"></figure>
 								<h4 class="text-center">Roubo</h4>
 								<p class="text-center">
 									Caso você venha a ser assaltado e seu dispositivo seja levado, basta que você faça a ocorrência policial e entre em contato com a seguradora. Após a análise, estará recebendo um produto do mesmo modelo. Produtos fora de linha serão reparados e/ou substituídos por produto similar em linha.
@@ -70,13 +70,12 @@
 								</p>
 							</div>
 							<div class="col-lg-6">
-								<figure></figure>
+								<figure class="proteja b"></figure>
 								<h4 class="text-center">Danos e quebras</h4>
 								<p class="text-center">
-									Quando você danifica externamente seu produto, se contratado, o seguro garante o reparo ou a reposição até o Limite Máximo
-de Indenização. <br> <br>
+									Quando você danifica externamente seu produto, se contratado, o seguro garante o reparo ou a reposição até o Limite Máximo de Indenização. <br> <br>
 
-Defeitos de fabricação e avarias causadas por excesso de uso não estão inclusas. Produtos fora de linha, que deixaram de ser fabricados ou que estejam indisponíveis, serão reparados e/ou substituídos por produto similar em linha.
+									Defeitos de fabricação e avarias causadas por excesso de uso não estão inclusas. Produtos fora de linha, que deixaram de ser fabricados ou que estejam indisponíveis, serão reparados e/ou substituídos por produto similar em linha.
 								</p>
 							</div>
 						</div>
@@ -84,231 +83,126 @@ Defeitos de fabricação e avarias causadas por excesso de uso não estão inclu
 				</div>
 				<!-- /INTRO -->
 			</section>
-			<section id="beneficios" class="container">
-				<h3 class="text-center">Vantagens do Consórcio</h3>
+			<section id="beneficios" class="container-beneficios">				
+				<!-- lista beneficios -->
+				<article class="article-beneficios">
+					<div class="col-lg-4">
+						<h4>
+							Seus principais
+							benefícios
+						</h4>
+						<p>
+							Não tenha dúvida, proteger seu dispositivo Apple, vai lhe garantir mais comodidade de uso.
+						</p>
+						<a href="#" class="btn btn-default ani" title="CONFIRA  AS REGRAS DO SEGURO">
+							CONFIRA  AS REGRAS DO SEGURO
+						</a>
+					</div>
+					<div class="col-lg-4">
+						<figure class="colchetes a">
+							<figcaption>
+								Indenização  <br>
+								em até 30 dias <br>
+								em caso de sinistro. 
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-lg-4">
+						<figure class="colchetes b">
+							<figcaption>
+								Segurança para aproveitar <br>
+								o melhor que seu Dispositivo <br> 	
+								Apple pode oferecer.	
+							</figcaption>
+						</figure>
+					</div>
+				</article>
+				<!-- /lista beneficios -->				
+			</section>
+			<section id="acionar" class="box-acionar">
+				<div class="container">
+					<h3 class="text-center">Qual procedimento para acionar o Seguro Easy?</h3>
+					<ol>
+						<li class="col-lg-4">
+							<div class="numbers a">
+								1
+							</div>
+							<p>
+								Você deve ligar para
+								<span>0800 703 9000</span>
+								e informar a ocorrência.
+							</p>
+						</li>
+						<li class="col-lg-4">
+							<div class="numbers b">
+								2
+							</div>
+							<p>
+								A Central de Atendimento <br>
+								vai lhe informar os <br>
+								<b>procedimentos a seguir.</b>
+							</p>
+						</li>
+						<li class="col-lg-4">
+							<div class="numbers c">
+								3
+							</div>
+							<p>
+								Após tomar as providências, <br>
+								você receberá outro aparelho <br>
+								em <b>até 30 dias.</b>
+							</p>
+						</li>
+					</ol>
+				</div>				
+			</section>
+			<section id="contrate" class="box-contrate">
+				<h3 class="text-center">Contrate agora o seu Seguro Easy</h3>
+				<!-- lista de produtos -->
 				<ul>
 					<li class="col-lg-3">
-						<figure class="vantagens parcelas"></figure>
-						<h6>Parcele em 36 meses</h6>
-						<small>
-							Sem juros e até 36 meses pra pagar. Apenas taxa administrativa.
-						</small>
+						<figure><img src="img/img-iphone.jpg" alt=""></figure>
+						
+						<div>
+							<h6>iPhone + Seguro</h6>
+							<sup>a partir de</sup>
+							<strong>R$22,90</strong>
+							<small>a mais na parcela*</small>
+							<a href="#" class="btn btn-default ani" title="Comprar">comprar</a>
+						</div>
 					</li>
 					<li class="col-lg-3">
-						<figure class="vantagens cofre"></figure>
-						<h6>Escolha a Parcela</h6>
-						<small>
-							Você escolhe o tamanho da  parcela que cabe no seu orçamento.
-						</small>
+						<figure><img src="img/img-ipad.jpg" alt=""></figure>
+						<div>
+							<h6>iPad + Seguro</h6>
+							<sup>a partir de</sup>
+							<strong>R$22,90</strong>
+							<small>a mais na parcela*</small>
+							<a href="#" class="btn btn-default ani" title="Comprar">comprar</a>
+						</div>
 					</li>
 					<li class="col-lg-3">
-						<figure class="vantagens calendar"></figure>
-						<h6>Sorteios Mensais</h6>
-						<small>
-							Como provedor de serviços autorizado Apple, você pode contar conosco para reparos e soluções.
-						</small>
+						<figure><img src="img/img-macpro.jpg" alt=""></figure>
+						<div>
+							<h6>MacBook Pro + Seguro</h6>
+							<sup>a partir de</sup>
+							<strong>R$22,90</strong>
+							<small>a mais na parcela*</small>
+							<a href="#" class="btn btn-default ani" title="Comprar">comprar</a>
+						</div>
 					</li>
 					<li class="col-lg-3">
-						<figure class="vantagens medalha"></figure>
-						<h6>Administradora Credenciada</h6>
-						<small>
-							Administradora de consórcios credenciada a Associação Brasileira de Administradoras de Consórcio.
-						</small>
+						<figure><img src="img/img-ipod.jpg" alt=""></figure>
+						<div>
+							<h6>iPod + Seguro</h6>
+							<sup>a partir de</sup>
+							<strong>R$22,90</strong>
+							<small>a mais na parcela*</small>
+							<a href="#" class="btn btn-default ani" title="Comprar">comprar</a>
+						</div>
 					</li>
 				</ul>
-				<footer class="footer-vantagem footer-grey">
-					<div class="box-vantagem">
-						<div class="col-lg-10">
-							<div class="store store1">
-								<h5>
-									INFORME-SE NAS LOJAS IPLACE
-								</h5>
-								<p>
-									São mais de 100 lojas em todo o Brasil. Descubra a mais próxima de você.
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-2">
-							<a href="#" class="btn btn-default ani" title="Nossas lojas">nossas lojas</a>
-						</div>
-					</div>
-				</footer>
-			</section>
-			<section id="planos">
-				<div class="container">
-					<h3 class="text-center tt-destaque">Conheça os planos e escolha a sua Carta de Crédito:</h3>
-					<hr>
-
-					<p class="text-center">
-						Escolha a carta de crédito para iMac, MacBook ou iPhone com uma parcela que cabe no seu orçamento
-						e tenha até 36 meses para pagar.
-					</p>
-
-					<div class="mac-planos">
-						<figure class="col-lg-8">
-							<img src="img/img-macs.jpg" alt="Macbook" class="img-responsive">
-						</figure>
-						<div class="col-lg-4">
-							<div class="table-responsive">
-							<h5>Carta de Crédito Mac</h5>
-							<table class="table">
-								<thead>
-									<tr>
-										<th>Crédito*</th>
-										<th>Parcela</th>
-									</tr>
-								</thead>
-								<tfoot>
-									<tr>
-										<td colspan="2">*36 meses</td>
-									</tr>
-								</tfoot>
-								<tbody>
-									<tr>
-										<td>R$ 5.899,00</td>
-										<td>R$ 182,70</td>
-									</tr>
-									<tr>
-										<td>R$ 6.399,00</td>
-										<td>R$ 198,19</td>
-									</tr>
-									<tr>
-										<td>R$ 7.699,00</td>
-										<td>R$ 238,45</td>
-									</tr>
-									<tr>
-										<td>R$ 8.499,00</td>
-										<td>R$ 263,23</td>
-									</tr>
-									<tr>
-										<td>R$ 9.499,00</td>
-										<td>R$ 294,20</td>
-									</tr>
-									<tr>
-										<td>R$ 10.499,00</td>
-										<td>R$ 325,18</td>
-									</tr>
-									<tr>
-										<td>R$ 11.499,00</td>
-										<td>R$ 356,14</td>
-									</tr>
-								</tbody>
-							</table>
-							</div>				
-						</div>		
-					</div>
-
-					<div class="iphone-planos">
-						<div class="col-lg-4">
-							<div class="table-responsive">
-							<h5>Carta de Crédito iPhone</h5>
-							<table class="table">
-								<thead>
-									<tr>
-										<th>Crédito*</th>
-										<th>Parcela</th>
-									</tr>
-								</thead>
-								<tfoot>
-									<tr>
-										<td colspan="2">*36 meses</td>
-									</tr>
-								</tfoot>
-								<tbody>
-									<tr>
-										<td>R$ 5.899,00</td>
-										<td>R$ 182,70</td>
-									</tr>
-									<tr>
-										<td>R$ 6.399,00</td>
-										<td>R$ 198,19</td>
-									</tr>
-									<tr>
-										<td>R$ 7.699,00</td>
-										<td>R$ 238,45</td>
-									</tr>
-									<tr>
-										<td>R$ 8.499,00</td>
-										<td>R$ 263,23</td>
-									</tr>
-									<tr>
-										<td>R$ 9.499,00</td>
-										<td>R$ 294,20</td>
-									</tr>
-									<tr>
-										<td>R$ 10.499,00</td>
-										<td>R$ 325,18</td>
-									</tr>
-									<tr>
-										<td>R$ 11.499,00</td>
-										<td>R$ 356,14</td>
-									</tr>
-								</tbody>
-							</table>
-							</div>	
-						</div>
-						<figure class="col-lg-8"><img src="img/img-iphones.jpg" alt="" class="img-responsive"></figure>
-					</div>					
-				</div>
-				<footer class="footer-planos footer-grey">
-						<div class="box-vantagem">
-							<div class="col-lg-9">
-								<div class="store store2">
-									<h5>
-										INFORME-SE NAS LOJAS IPLACE
-									</h5>
-									<p>
-										São mais de 100 lojas em todo o Brasil. Descubra a mais próxima de você.
-									</p>
-								</div>
-							</div>
-							<div class="col-lg-3">
-								<a href="#" class="btn btn-default ani" title="Nossas lojas">nossas lojas</a>
-							</div>
-						</div>
-				</footer>
-			</section>
-			<section id="duvidas">
-				<div class="container">
-					<h3 class="text-center tt-destaque">Dúvidas Frequentes</h3>
-					<hr>
-
-					<!-- duvidas -->
-					<div class="perguntas" id="accordion">
-						<div class="panel panel-default">
-						    <div class="panel-heading">
-						      <h4 class="panel-title">
-						        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-						          Veja aqui as dúvidas mais frequentes sobre o Consórcio iPlace
-						          <i class="indicator ico-duvidas claro  pull-right"></i>
-						        </a>
-						      </h4>
-						    </div>
-						    <div id="collapseOne" class="panel-collapse collapse">
-						      <div class="panel-body">
-						       	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, quasi.
-
-						      </div>
-						    </div>
-						</div>
-						<div class="panel panel-default">
-						    <div class="panel-heading">
-						      <h4 class="panel-title">
-						        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-						          Veja aqui as dúvidas mais frequentes sobre o Consórcio iPlace 
-
-						        </a><i class="indicator ico-duvidas claro  pull-right"></i>
-						      </h4>
-						    </div>
-						    <div id="collapseTwo" class="panel-collapse collapse">
-						      <div class="panel-body">
-						       	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, nemo!
-
-						      </div>
-						    </div>
-						</div>
-					</div>
-				</div>
+				<!-- /lista de produtos -->
 			</section>
 			<!-- /conteudos -->
 		</section>

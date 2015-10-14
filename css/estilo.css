@@ -1010,8 +1010,8 @@ hr.container {padding:0;}
 		margin-top: 15px;
 		float: left;
 	}
-	/*.menu-principal .ativo a::before,
-	.menu-principal li:nth-child(2) a::before {background:none;} */
+	.menu-principal li.ativo + li a::before,
+	.menu-principal li.ativo a::before {background: none;}
 }
 
 /*
@@ -1428,7 +1428,7 @@ hr.container {padding:0;}
 	width:18px; 
 	background:#8FB134; 
 } /* configurando scroll */
-/*.box-cidades::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }*/
+
 .box-cidades::-webkit-scrollbar-thumb { 
 	background:url(../img/background/bg-scroll.jpg) no-repeat center top;  
 	width:10px;
@@ -1501,8 +1501,3 @@ hr.container {padding:0;}
 .regras.e { background-position: -380px 0; width: 56px; height: 49px; } 
 .regras.f { background-position: -476px 0; height: 45px; } 
 .regras.g { background-position: -561px 0; width: 49px; height: 48px; } 
-
-/*seguro easy*/
-#inicio.introB {
-	background:url(../img/background/bg-intro2.jpg) repeat;
-}

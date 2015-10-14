@@ -87,6 +87,4 @@ function tween(){
 // barra ativo
 function barraAtivo(){
 	$(".barra-ativo").width($(".ativo").width());
-	var ativo = $(".ativo").offset().left;
-	$(".barra-ativo").css("left",ativo);
 }
