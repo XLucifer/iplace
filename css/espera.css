@@ -83,15 +83,22 @@
 		max-width: 1440px;
 		max-height: 1100px;				
 	}
-
+	.relojao {
+		position: absolute;
+		top:-300px;
+		right:0;
+		z-index: -1;
+		background:url(../img/background/bg-bigclock.jpg) no-repeat right 0;
+		height: 1470px;
+		overflow: hidden;
+		max-width: 1440px;
+		max-height: 1470px;
+		width: 100%;		
+		background-size: 100%;
+	}
 }
 
-.relojao {
-	position: absolute;
-	top:-250px;
-	right:0;
-	z-index: -1;
-}
+
 
 .big-clock h1 {
 	color:#333;
