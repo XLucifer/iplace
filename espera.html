@@ -33,7 +33,9 @@
 				Aproveite este tempo e conheça o Apple Watch.
 			</p>
 			
-			<a href="#" title="ASSISTA AO VIDEO DE APRESENTAÇÃO" class="video espera a">ASSISTA AO VIDEO DE APRESENTAÇÃO</a>
+			<a href="#" data-toggle="modal" data-target="#myModal" title="ASSISTA AO VIDEO DE APRESENTAÇÃO" class="video espera a">ASSISTA AO VIDEO DE APRESENTAÇÃO</a>	
+
+			
 		</div>
 		<!-- /big clock -->
 		<section class="container">			
@@ -128,7 +130,7 @@
 
 				<h4 class="text-center">E muito mais.</h4>
 
-				<a href="#" title="ASSISTA AO VIDEO DE APRESENTAÇÃO" class="video espera a">ASSISTA AO VIDEO DE APRESENTAÇÃO</a>
+				<a href="#" data-toggle="modal" data-target="#myModal" title="ASSISTA AO VIDEO DE APRESENTAÇÃO" class="video espera a">ASSISTA AO VIDEO DE APRESENTAÇÃO</a>
 			</nav>
 			<!-- /carousel -->
 		</section>
@@ -148,6 +150,16 @@
 		</form>
 		<!-- /form de envio -->
 
+		<div class="modal fade" id="myModal">
+		  <div class="modal-dialog">
+		    <div class="modal-content embed-responsive embed-responsive-16by9 img-responsive">	      
+		     	<video controls class="img-responsive myVideo" id="myVideo">
+			        <source src=http://images.apple.com/media/br/watch/2014/videos/e71af271_d18c_4d78_918d_d008fc4d702d/tour/design/watch-design-br-20140912_848x480.mp4 type=video/mp4>
+			    </video>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
 		<!-- scripts -->
 		<script src="js/jquery-1.11.3.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
@@ -157,7 +169,15 @@
 			$(document).ready(function() {
 			    $('#myCarousel').carousel({
 				    interval: 10000
-				})
+				});
+
+			    $('#myModal').on('hidden.bs.modal', function (e) {
+				  // stop video
+				    document.getElementById("myVideo").load();
+					document.getElementById("myVideo").pause();
+				});
+			    
+
 			});
 		</script>
 		<!-- /scripts -->

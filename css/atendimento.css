@@ -1,0 +1,12 @@
+.atendimento { background: url(../img/sprite/bg-atendimento.png) no-repeat top left; width: 108px; height: 107px;  } 
+.atendimento.a { background-position: 0 0; width: 790px; height: 210px; } 
+.atendimento.b { background-position: 0 -260px; width: 120px; height: 100px; } 
+.atendimento.c { background-position: 0 -410px; width: 139px; height: 100px; } 
+.atendimento.d { background-position: 0 -560px; width: 145px; height: 94px; } 
+.atendimento.e { background-position: 0 -704px; width: 110px; height: 106px; } 
+.atendimento.f { background-position: 0 -860px; width: 110px; height: 103px; } 
+.atendimento.g { background-position: 0 -1013px; width: 170px; height: 95px; } 
+.atendimento.h { background-position: 0 -1158px; } 
+.atendimento.i { background-position: 0 -1315px; } 
+.atendimento.j { background-position: 0 -1472px; } 
+.atendimento.l { background-position: 0 -1629px; width: 145px; height: 80px; } 
