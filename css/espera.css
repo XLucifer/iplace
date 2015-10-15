@@ -1,0 +1,214 @@
+.carousel {
+    margin-bottom: 0;
+	padding: 0 40px 30px 40px;
+}
+
+.carousel-control {
+	left: -12px;
+}
+.carousel-control.right {
+	right: -12px;
+}
+
+.carousel-indicators {
+	right: 50%;
+	top: auto;
+	bottom: 0px;
+	margin-right: -19px;
+}
+.carousel-indicators li {background: #ccc;margin:0;}
+.carousel-indicators li,
+.carousel-indicators .active {
+	width:16px;
+	height: 16px;
+}
+
+.carousel-indicators .active {
+	background: #333333;
+}
+#clock-carousel {
+	margin-bottom: 58px;
+	overflow: hidden;
+}
+#clock-carousel span {
+	color:#333;
+	font:14px arial;
+	display: block;
+	text-align: center;
+}
+#clock-carousel .well {
+	background: none;
+	border:0;
+	box-shadow: none;
+}
+
+#clock-carousel .carousel-control.left,
+#clock-carousel .carousel-control.right {background: none; text-indent: -9000em; display: none;}
+
+@media (min-width: 1200px) {
+	#clock-carousel .carousel-control.left,
+	#clock-carousel .carousel-control.right {
+		display: block;
+		background-color: none;
+		background:url(../img/sprite/ico-setas.png) no-repeat;
+	}
+	#clock-carousel .carousel-control.left {background-position: 0 72px;}
+	#clock-carousel .carousel-control.right {background-position: -203px 72px;}
+}
+
+
+
+#clock-carousel .thumbnail {border:0;}
+#clock-carousel .thumbnail:hover {text-decoration: none;}
+#clock-carousel .carousel-inner {margin-bottom: 33px;}
+
+#clock-carousel h4 {
+	font:24px arial;
+	color:#333;
+	margin:0 0 34px 0;
+}
+
+.big-clock {
+	overflow: hidden;
+	max-width: 1440px;
+	max-height: 1100px;
+	margin:0 auto;
+	position: relative;
+}
+
+@media (min-width: 1200px) {
+	.big-clock {
+		height: 1470px;
+		overflow: hidden;
+		max-width: 1440px;
+		max-height: 1100px;				
+	}
+
+}
+
+.relojao {
+	position: absolute;
+	top:-250px;
+	right:0;
+	z-index: -1;
+}
+
+.big-clock h1 {
+	color:#333;
+	font:300 36px/40px "Open Sans";
+}
+
+.big-clock p {
+	color:#333;
+	font:20px arial;
+	padding:18px 0 41px 0;
+}
+
+
+/*reimagine*/
+.reimagine {
+	overflow: hidden;	
+	margin-bottom: 42px;
+}
+.reimagine h2 {
+	font:300 42px "Open Sans";
+	color:#333;
+	text-align: center;
+	margin:10px 0;
+}
+.reimagine p {
+	color:#333;
+	font:14px/25px arial;
+	text-align: center;
+}
+@media (min-width: 1200px) {
+	.reimagine h2 {
+		width:247px;
+		text-align: left;
+		margin:0;
+	}
+	.reimagine p {text-align: left;}
+}
+
+/*form*/
+.clock-send {
+	background: #000;
+	overflow: hidden;
+	padding:46px 0 53px 0;
+}
+
+.clock-send h5 {
+	color:#fff;
+	font:20px Arial;
+}
+
+.box-send {
+	width:90%;
+	margin:0 auto;
+}
+
+.clock-send .name {
+	border:2px solid #ccc;
+	width:100%;
+	height: 43px;
+	background: #fff;
+	color:#ccc;
+	font:14px arial;
+	padding: 0 13px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.clock-send .mail {
+	border:2px solid #ccc;
+	width:100%;
+	height: 43px;
+	background: #fff;
+	color:#ccc;
+	font:14px arial;
+	padding: 0 13px;
+	margin:5px auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+@media (min-width: 1200px) {
+	.box-send {
+		width:546px;		
+	}	
+	.clock-send .name {
+		width: 206px;
+		float: left;
+	}
+	.clock-send .mail {
+		width:292px;
+		margin: 0 0 0 4px;
+		float: left;
+	}
+	.clock-send input[type="submit"] {float: right;}
+}
+.clock-send input[type="submit"] {
+	border:0;
+	text-indent: -9000em;
+}
+
+
+/*SPRITE ESPERA*/
+.espera { background: url(../img/sprite/espera.png) no-repeat top left;  } 
+.espera.a { 
+	background-position: 0 0; 
+	width: 310px; 
+	height: 39px; 
+	display: block;
+	color:#fff;
+	font:12px/44px arial;
+	text-indent: 16px;
+	margin:0 auto;
+} 
+.espera.b { 
+	background-position: 0 -139px; 
+	width: 236px; 
+	height: 119px; 
+	margin:44px auto;
+} 
+.espera.c { background-position: 0 -358px; width: 44px; height: 43px; } 
