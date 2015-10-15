@@ -6,7 +6,275 @@
 .atendimento.e { background-position: 0 -704px; width: 110px; height: 106px; } 
 .atendimento.f { background-position: 0 -860px; width: 110px; height: 103px; } 
 .atendimento.g { background-position: 0 -1013px; width: 170px; height: 95px; } 
-.atendimento.h { background-position: 0 -1158px; } 
-.atendimento.i { background-position: 0 -1315px; } 
-.atendimento.j { background-position: 0 -1472px; } 
+.atendimento.h { background-position: 0 -1158px;  display: block;} 
+.atendimento.i { background-position: 0 -1315px; display: block; } 
+.atendimento.j { background-position: 0 -1472px; display: block; } 
 .atendimento.l { background-position: 0 -1629px; width: 145px; height: 80px; } 
+
+
+#geral-atendimento {
+	margin:20px auto 0;
+	width: 95%;
+}
+
+.container-atendimento h2 {
+	color:#333;
+	font:42px arial;
+	padding-bottom: 24px;
+}
+.container-atendimento p {display: none;}
+
+.atendimento-conosco {display: none;}
+.article-atendimento {
+	border:1px solid #ccc;
+	padding:40px 0 27px;
+	margin:4px auto 50px;
+}
+
+.article-atendimento h3 {
+	font:bold 42px arial;
+	color:#333;
+	width:277px;
+	margin:0 auto;
+}
+
+.article-atendimento p {
+	font:24px arial;
+	color:#8D8D8D;
+	margin:17px auto;
+	width:283px;
+}
+
+.article-atendimento .btn {
+	padding:0;
+	margin:0 auto;
+	display: block;
+	width:276px;
+	height: 66px;
+	border-color:#AFC300;
+	color:#AFC300;
+	text-transform: uppercase;
+	font:bold 30px/66px arial;
+}
+
+.article-atendimento .btn:hover {
+	border-color:#333;
+	background: none;
+	color:#333;
+}
+
+@media (min-width: 1200px) {
+	#geral-atendimento {
+		width: 1200px;
+	}
+	.atendimento-conosco {display: block;}
+	.container-atendimento {
+		background: #000;
+		height: 431px;
+	}	
+	.container-atendimento h2 {
+		color:#fff;
+		margin:0;
+	}
+
+	.container-atendimento h2::before {
+		content:"";
+		display: block;
+		width:140px;
+		height:59px;
+		background: url(../img/sprite/bg-quem-somos.png) no-repeat bottom center;
+		margin:40px auto 20px;
+		padding:70px 0 19px;
+	}
+	.container-atendimento p {
+		color:#ccc;
+		font:17px/30px arial;
+		display: block;
+		text-align: center;
+		width:326px;
+		margin:0 auto;
+	}
+
+	.article-atendimento {
+		width:360px;
+		float: left;
+		margin-top: 25px;
+		margin-bottom: 70px;
+		height: 210px;
+		padding:0;
+	}
+	.article-atendimento:nth-child(1) {
+		margin-right: 20px;
+	}
+
+	.article-atendimento h3 {
+		font:bold 24px arial;
+		color:#333;
+		width:100%;
+		margin-top: 39px;
+		margin-bottom: 14px;
+	}
+
+	.article-atendimento p {
+		width:262px;
+		margin:0 auto 21px;
+		font-size: 16px;
+	}
+
+	.article-atendimento .btn {
+		width:128px;
+		height: 30px;
+		font-size: 12px;	
+		line-height: 30px;
+		padding:0 10px;
+		font-weight:normal ;
+	}
+
+	.article-atendimento:nth-child(2) .btn {width:192px;}
+}
+
+.duvidas-frequentes {
+	clear: both;
+	overflow: hidden;
+}
+
+.duvidas-frequentes h3 {
+	font:42px arial;
+	color:#333;
+	width:220px;
+	margin:0 auto;
+}
+
+.tire-duvidas {
+	overflow: hidden;	
+	margin:25px auto;
+	border-bottom: 1px solid #eee;
+}
+
+.tire-duvidas ul {
+	list-style: none;
+	margin:0;
+	padding: 0;
+}
+
+.tire-duvidas li {	
+	margin-bottom: 20px;
+}
+
+.tire-duvidas div {
+	border:1px solid #ccc;
+	position: relative;
+	height: 220px;
+	margin:0 auto;
+}
+
+.tire-duvidas figure {
+	position: absolute;
+	top:45%;
+	left:50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+
+.tire-duvidas span {
+	display: block;
+	text-align: center;
+	color:#666;
+	width:100%;
+	font:24px arial;
+	position: absolute;
+	bottom:0;
+	left:50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+
+@media (min-width: 1200px) {
+	.duvidas-frequentes h3 {
+		font:42px arial;
+		color:#464646;
+		width:100%;
+	}
+
+	.tire-duvidas {width: 1200px;}
+	.tire-duvidas li {margin-bottom: 0;}
+	.tire-duvidas div {
+		width:380px;		
+		margin-bottom:30px;
+	}
+	.tire-duvidas span {
+		font-size:20px;
+		bottom: 10px;
+	}
+}
+
+/*duvida-esclarecida*/
+.duvida-esclarecida {
+	margin:0 auto;
+	padding: 60px 0;
+	overflow: hidden;
+}
+
+.duvida-esclarecida h5 {
+	color:#333;
+	font:42px arial;
+	margin:0;
+}
+.duvida-esclarecida small {
+	font-size:24px;
+	display: block;
+	color:#666;
+	line-height: normal;
+	width: 353px;
+	padding:16px 0 40px;
+}
+
+.esclarecida {
+	width:348px;
+}
+.atendimento-contato div {padding:0;}
+.atendimento-contato figure {
+	margin:0 auto;
+}
+.atendimento-contato span {
+	display: block;
+	text-align: center;
+	font:24px arial;
+	color:#999;
+	margin:10px auto;
+}
+
+@media (min-width: 1200px) {
+	.duvida-esclarecida {
+		width:827px;
+		
+	}
+	.duvida-esclarecida h5 {
+		width: 301px;
+		line-height: 45px;
+	}
+	.duvida-esclarecida  small {
+		font-size:17px;
+		width: 257px;
+		padding-bottom: 16px;
+	}
+
+	.esclarecida {
+		width:310px;
+		float: left;
+	}
+
+	.atendimento-contato {
+		float:right;
+		width: 470px;
+	}
+
+	.atendimento-contato span {
+		font-size: 20px;
+		width: 100%;
+	}
+}
