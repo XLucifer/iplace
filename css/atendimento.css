@@ -239,13 +239,20 @@
 #cancelamento.black div {
 	border-bottom:2px solid #000;	
 }
-#pagamento.black div {
+#pagamento.black div,
+#loja-fisica.black div,
+#trabalhe.black div {
 	border-top:3px solid #000;	
 }
 
-.pagamento.escondido {top:20px;}
+.pagamento.escondido,
+.trabalhe.escondido,
+.loja-fisica.escondido {top:20px;}
+
 @media (min-width: 1200px) {
-	.pagamento.escondido {top:35px;}
+	.pagamento.escondido,
+	.trabalhe.escondido,
+	.loja-fisica.escondido {top:35px;}
 }
 
 
