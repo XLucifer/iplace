@@ -11,6 +11,11 @@
 .atendimento.j { background-position: 0 -1472px; display: block; } 
 .atendimento.l { background-position: 0 -1629px; width: 145px; height: 80px; } 
 
+.atendimento-contato div:hover {cursor: pointer;}
+.atendimento-contato div:hover .atendimento.h { background-position: -670px -1157px;  display: block;} 
+.atendimento-contato div:hover .atendimento.i { background-position: -670px -1316px; display: block; } 
+.atendimento-contato div:hover .atendimento.j { background-position: -670px -1479px; display: block; } 
+.atendimento-contato div:hover a {color:#999;text-decoration: underline;}
 
 #geral-atendimento {
 	margin:20px auto 0;
@@ -21,8 +26,9 @@
 	color:#333;
 	font:42px arial;
 	padding-bottom: 24px;
+	opacity: 0;
 }
-.container-atendimento p {display: none;}
+.container-atendimento p {display: none; opacity:0;}
 
 .atendimento-conosco {display: none;}
 .article-atendimento {
@@ -32,6 +38,7 @@
 }
 
 .article-atendimento h3 {
+	opacity: 0;
 	font:bold 42px arial;
 	color:#333;
 	width:277px;
@@ -39,6 +46,7 @@
 }
 
 .article-atendimento p {
+	opacity: 0;
 	font:24px arial;
 	color:#8D8D8D;
 	margin:17px auto;
@@ -46,6 +54,7 @@
 }
 
 .article-atendimento .btn {
+	opacity: 0;
 	padding:0;
 	margin:0 auto;
 	display: block;
@@ -137,8 +146,9 @@
 	clear: both;
 	overflow: hidden;
 }
-
+.duvidas-frequentes hr {opacity: 0;}
 .duvidas-frequentes h3 {
+	opacity: 0;
 	font:42px arial;
 	color:#333;
 	width:220px;
@@ -146,6 +156,7 @@
 }
 
 .tire-duvidas {
+	opacity: 0;
 	overflow: hidden;	
 	margin:25px auto;
 	border-bottom: 1px solid #eee;
@@ -158,7 +169,35 @@
 }
 
 .tire-duvidas li {	
+	height: 220px;
 	margin-bottom: 20px;
+}
+
+.escondido {
+	position: relative;
+	top:-20px;
+	min-height: 255px;
+	display: none;
+	overflow:hidden;
+	margin:0;
+	padding-right: 4px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.escondido section {
+	background:#F4F4F4;
+	padding:40px 60px;
+}
+.escondido h4 {
+	font:42px arial;
+	color: #333;
+	padding-bottom: 22px;
+}
+
+.escondido p {
+	color:#333;
+	font:17px/30px arial;
 }
 
 .tire-duvidas div {
@@ -193,6 +232,75 @@
 	transform: translate(-50%,-50%);
 }
 
+#cancelamento.black figure{
+	background:url(../img/bg-cancelamento-black.jpg) no-repeat;
+}
+
+#cancelamento.black div {
+	border-bottom:2px solid #000;	
+}
+#pagamento.black div {
+	border-top:3px solid #000;	
+}
+
+.pagamento.escondido {top:20px;}
+@media (min-width: 1200px) {
+	.pagamento.escondido {top:35px;}
+}
+
+
+.black div::after {
+	content:"";
+	display: block;
+	width:28px;
+	height: 17px;
+	position: absolute;
+	bottom: -4px;
+	left:50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+
+	border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 14px solid #f4f4f4;
+}
+
+.black div::before {
+	content: "";
+	display: block;
+	width:28px;
+	height: 17px;
+	position: absolute;
+	bottom: -4px;
+	left:50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+
+	border-left: 22px solid transparent;
+    border-right: 22px solid transparent;
+    border-bottom: 17px solid #000;
+}
+
+.black.invert div::before {
+	top:-3px;
+	background:url(../img/ico-triangulo.jpg) no-repeat;	
+	width:28px;
+	height: 17px;
+	content: "";
+	border:0;
+	-webkit-transform: rotate(-180deg);
+	-ms-transform: rotate(-180deg);
+	-o-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+}
+.black.invert div::after {border:0;}
+
+
+
 @media (min-width: 1200px) {
 	.duvidas-frequentes h3 {
 		font:42px arial;
@@ -201,7 +309,7 @@
 	}
 
 	.tire-duvidas {width: 1200px;}
-	.tire-duvidas li {margin-bottom: 0;}
+	/*.tire-duvidas li {margin-bottom: 0;}*/
 	.tire-duvidas div {
 		width:380px;		
 		margin-bottom:30px;
@@ -236,6 +344,10 @@
 .esclarecida {
 	width:348px;
 }
+
+
+
+/*.atendimento-contato {opacity: 0;}*/
 .atendimento-contato div {padding:0;}
 .atendimento-contato figure {
 	margin:0 auto;
@@ -277,4 +389,14 @@
 		font-size: 20px;
 		width: 100%;
 	}
+}
+
+.box-atendimento img {margin: 0 auto;}
+
+@media (min-width: 320px) and (max-width: 480px) {
+	.article-atendimento h3 {width:auto;font-size: 25px;}
+	.article-atendimento p {width:auto;font-size: 20px;}
+	.article-atendimento .btn {width:90%;font-size: 24px;}
+	.tire-duvidas span,
+	.atendimento-contato span {font-size: 20px;}
 }

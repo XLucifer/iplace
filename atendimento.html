@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 	<head>
 		<meta charset="UTF-8">
-		<title>Espera</title>
+		<title>Atendimento</title>
 		<meta name="viewport" content="width=device-width, user-scalable=no">
 		
 		<!-- font Open Sans -->
@@ -71,13 +71,33 @@
 								<span>Troca e Devolução</span>
 							</div>
 						</li>
-						<li class="col-lg-4 col-xs-6">
+						<li class="col-lg-4 col-xs-6" id="cancelamento">
 							<div>
 								<a href=""><figure class="atendimento d"></figure></a>
 								<span>Cancelamento e Desistência</span>
-							</div>
+							</div>							
 						</li>
-						<li class="col-lg-4 col-xs-6">
+						
+						<li class="col-lg-12 col-xs-12 escondido cancelamento">
+							<section>
+								<h4>Cancelamento e Desistência</h4>
+								<p>
+									Em caso de desistência do pedido que está com os Correios/ Transportadora, orientamos recusar o a compra no ato da entrega, e entrar em contato com a nossa Central de Atendimento com o número do seu pedido em mãos para procedermos com o cancelamento junto ao seu cartão assim que o pedido retornar ao nosso Centro de Distribuição.
+								</p>
+							</section>
+						</li>
+
+						<li class="col-lg-12 col-xs-12 escondido pagamento">
+							<section>
+								<h4>Pagamento</h4>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non saepe, voluptas excepturi iste qui aspernatur ad eius praesentium. Distinctio reprehenderit debitis, sunt reiciendis error consequuntur, voluptatibus omnis inventore quidem magnam.
+								</p>
+							</section>
+						</li>
+
+
+						<li class="col-lg-4 col-xs-6 invert" id="pagamento">
 							<div>
 								<a href=""><figure class="atendimento e"></figure></a>
 								<span>Pagamento</span>
@@ -96,6 +116,8 @@
 							</div>
 						</li>
 					</ul>
+
+					
 				</nav>
 				<!-- /tire as duvidas -->
 			</section>
@@ -110,21 +132,15 @@
 				</div>
 				<div class="atendimento-contato">
 					<div class="col-lg-4 col-xs-4">
-						<figure class="atendimento h">
-							<figcaption></figcaption>
-						</figure>
-						<span>Chat online</span>
+						<figure class="atendimento h"></figure>
+						<a href="#"><span>Chat online</span></a>
 					</div>
 					<div class="col-lg-4 col-xs-4">
-						<figure class="atendimento i">
-							<figcaption></figcaption>
-						</figure>
-						<span>E-mail</span>
+						<figure class="atendimento i"></figure>
+						<a href="#" title="E-mail"><span>E-mail</span></a>
 					</div>
 					<div class="col-lg-4 col-xs-4">
-						<figure class="atendimento j">
-							<figcaption></figcaption>
-						</figure>
+						<figure class="atendimento j"></figure>
 						<span>0800 644 2255</span>
 					</div>
 				</div>
@@ -134,9 +150,9 @@
 		
 
 		<!-- scripts -->
-		<script src="js/jquery-1.11.3.min.js" async defer></script>
-		<script src="js/bootstrap.min.js" async defer></script>
-		
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/tweenMax.js"></script>
+		<script src="js/atendimento.js"></script>
 		<!-- /scripts -->
 	</body>
 </html>
