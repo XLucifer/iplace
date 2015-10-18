@@ -162,6 +162,7 @@
 	border-bottom: 1px solid #eee;
 }
 
+
 .tire-duvidas ul {
 	list-style: none;
 	margin:0;
@@ -235,61 +236,53 @@
 #cancelamento.black figure{
 	background:url(../img/bg-cancelamento-black.jpg) no-repeat;
 }
-
-#cancelamento.black div {
-	border-bottom:2px solid #000;	
-}
+#cancelamento.black div,
+#secure.black div,
+#troca-devolucao.black div,
 #pagamento.black div,
 #loja-fisica.black div,
 #trabalhe.black div {
-	border-top:3px solid #000;	
-}
-
-.pagamento.escondido,
-.trabalhe.escondido,
-.loja-fisica.escondido {top:20px;}
+	border-bottom:2px solid #000;	
+} 
 
 @media (min-width: 1200px) {
-	.pagamento.escondido,
-	.trabalhe.escondido,
-	.loja-fisica.escondido {top:35px;}
-}
+	
+	
+	.black div::after {
+		content:"";
+		display: block;
+		width:28px;
+		height: 17px;
+		position: absolute;
+		bottom: -4px;
+		left:50%;
+		-webkit-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+		transform: translateX(-50%);
 
+		border-left: 18px solid transparent;
+	    border-right: 18px solid transparent;
+	    border-bottom: 14px solid #f4f4f4;
+	}
 
-.black div::after {
-	content:"";
-	display: block;
-	width:28px;
-	height: 17px;
-	position: absolute;
-	bottom: -4px;
-	left:50%;
-	-webkit-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	-o-transform: translateX(-50%);
-	transform: translateX(-50%);
+	.black div::before {
+		content: "";
+		display: block;
+		width:28px;
+		height: 17px;
+		position: absolute;
+		bottom: -4px;
+		left:50%;
+		-webkit-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+		transform: translateX(-50%);
 
-	border-left: 18px solid transparent;
-    border-right: 18px solid transparent;
-    border-bottom: 14px solid #f4f4f4;
-}
-
-.black div::before {
-	content: "";
-	display: block;
-	width:28px;
-	height: 17px;
-	position: absolute;
-	bottom: -4px;
-	left:50%;
-	-webkit-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	-o-transform: translateX(-50%);
-	transform: translateX(-50%);
-
-	border-left: 22px solid transparent;
-    border-right: 22px solid transparent;
-    border-bottom: 17px solid #000;
+		border-left: 22px solid transparent;
+	    border-right: 22px solid transparent;
+	    border-bottom: 17px solid #000;
+	}
 }
 
 .black.invert div::before {
