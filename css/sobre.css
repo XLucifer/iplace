@@ -1,3 +1,4 @@
+/*sobre*/
 /*************************
 Autor: André Luz da Silva;
 /***************************/
@@ -1506,3 +1507,74 @@ hr.container {padding:0;}
 .regras.e { background-position: -380px 0; width: 56px; height: 49px; } 
 .regras.f { background-position: -476px 0; height: 45px; } 
 .regras.g { background-position: -561px 0; width: 49px; height: 48px; } 
+
+/*carousel*/
+.carousel-sobre {
+	background:url(../img/background/bg-carousel-sobre.jpg) repeat;
+	height: 420px;
+	color:#fff;
+}
+
+.carousel-sobre div {
+	text-align: left;
+	font-family: arial;
+}
+.carousel-sobre small {
+	display: block;
+	font-size:12px;
+}
+.carousel-sobre p {
+	font-size: 20px;
+}
+.carousel-sobre .row-fluid {
+	position: relative;
+	height: 420px;
+}
+
+.box-item {
+	position: absolute;
+	top:50%;
+	left:50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+
+.box-item img {
+	display: none;
+	margin:0 auto;
+}
+
+.carousel-sobre .left, 
+.carousel-sobre .right {background-image:none;}
+.carousel-sobre .carousel-control {width: 8%; opacity: 1;}
+
+.carousel-sobre .left span, 
+.carousel-sobre .right span {
+	font-size: 50px;
+	line-height: 420px;
+	display: none;
+}
+
+.carousel-indicators {display: block;}
+@media (min-width: 1200px) {
+	.box-item img {display: block;}
+	.box-item {
+		overflow: hidden;
+		margin: 0 auto;
+		width:80%;
+	}
+	.box-item p {font-size: 30px;}
+	.box-item small {font-size: 15px; line-height: 30px;}
+
+	.carousel-sobre .left span, 
+	.carousel-sobre .right span {
+		font-size: 140px;
+		line-height: 420px;
+		display: block;
+	}
+	
+	.carousel-indicators {display: none;}
+}
+.pad0 {padding:0;}
