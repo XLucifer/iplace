@@ -1,0 +1,170 @@
+/*sobre*/
+/*************************
+Autor: André Luz da Silva;
+/***************************/
+
+.over {overflow: hidden;}
+.clear {clear: both;}
+
+ul,ol {list-style: none;}
+
+/*lojas*/
+#lojas {
+	background:url(../img/background/bg-lojas.jpg) no-repeat fixed center top;
+	/*background-size: cover;*/
+}
+.box-lojas {background:rgba(255,255,255,.95);}
+
+/*sobre*/
+.tt-premium {
+	font:48px Arial;
+	color:#474747;
+	margin-bottom: 33px;
+}
+.tt-destaque + hr {
+	width:180px;
+	height: 1px;
+	border-top:1px solid #B8CF2E;
+}
+#planos hr {opacity: 0;}
+
+#lojas {
+	position: relative;
+	min-height: 599px;
+	margin-bottom: 30px;
+}
+.box-lojas {
+	overflow: hidden;
+	padding:30px 0 0;
+	box-shadow:0 6px 10px rgba(0,0,0,.1);
+}
+@media (min-width: 1200px) {
+	#lojas {overflow: hidden;}
+}
+
+.sobre p {
+	color:#333;
+	font:18px/30px arial;
+	padding-bottom: 60px;
+	padding-top: 20px;
+	opacity: 0;
+}
+
+.toda-linha p {
+	color:#333;
+	font:18px/30px arial;
+	padding:20px 0 30px;
+	opacity: 0;
+}
+
+.places ul {opacity: 0;}
+
+.places li {padding-bottom: 60px;}
+
+.places h6 {
+	font:22px arial;
+	color:#333;
+	padding:18px 0 9px 0;
+	margin: 0;
+}
+
+.places small {
+	display: block;
+	color:#666;
+	font:15px arial;
+	padding-bottom: 9px;
+}
+.places a {
+	color:#333;
+	font:13px arial;
+}
+
+.tips h3 {
+	margin:30px 0 0 0;
+	color:#464646;
+	font:42px arial;
+	opacity: 0;
+}
+
+.tips hr, .tips div,
+.tips figure {opacity: 0;}
+.box-assistencia {
+	border:1px solid #ccc;
+	padding:26px 50px;
+	margin:34px 0 40px;
+}
+
+.box-assistencia figure {
+	width:85px;
+	height: 85px;
+	float: left;
+	margin-right: 24px;
+}
+
+.box-assistencia p {
+	color:#85B000;
+	font:400 15px "Open Sans";
+}
+.box-assistencia p > b {font-size: 20px;}
+
+.box-features {
+	margin:0 auto 40px;
+	overflow: hidden;
+}
+.box-features li {margin-bottom: 20px;}
+.box-features h6 {
+	font:18px arial;
+	color:#333;
+	padding: 24px 0;
+}
+.box-features p {
+	color:#333;
+	font:14px/25px arial;
+	max-width: 292px;
+}
+@media (min-width: 1200px) {
+	.box-features {width: 1011px;}
+
+	.box-assistencia p {
+		font-size:20px;
+	}
+}
+
+
+.pad0 {padding:0;}
+
+.assistencia { background: url(../img/sprite/sprite-assistencia.png) no-repeat top left; width: 240px; height: 150px;  } 
+.assistencia.a { background-position: 0 0; } 
+.assistencia.b { background-position: 0 -200px; } 
+.assistencia.c { background-position: 0 -400px; } 
+.assistencia.d { background-position: 0 -600px; } 
+.assistencia.e { background-position: 0 -800px; } 
+.assistencia.f { background-position: 0 -1000px; width: 772px; height: 320px; margin:0 auto; } 
+.assistencia.g { background-position: 0 -1370px; width: 84px; height: 84px; } 
+.assistencia.h { background-position: 0 -1504px; width: 85px; height: 85px; } 
+.assistencia.i { background-position: 0 -1639px; width: 83px; height: 83px; } 
+.assistencia.j { background-position: 0 -1772px; width: 84px; height: 84px; } 
+.assistencia.l { background-position: 0 -1906px; width: 84px; height: 84px; } 
+.assistencia.m { background-position: 0 -2040px; width: 84px; height: 84px; } 
+.assistencia.n { background-position: -696px 6px;} 
+
+/*assistencia menor*/
+.sprite-assistencia2 { background: url(../img/sprite/sprite-assistencia2.png) no-repeat top left;  } 
+.sprite-assistencia2.a { background-position: 0 0; width: 329px; height: 136px; } 
+.sprite-assistencia2.b { background-position: 0 -186px; width: 450px; height: 186px; } 
+.sprite-assistencia2.c { background-position: 0 -422px; width: 698px; height: 289px; } 
+
+@media (min-width: 320px) {
+	.assistencia.f {background: url(../img/sprite/sprite-assistencia2.png) no-repeat top left; width:329px; height: 136px;}
+}
+@media (min-width: 480px) {
+	.assistencia.f {background: url(../img/sprite/sprite-assistencia2.png) no-repeat 0 -186px; width:450px; height: 186px;}	
+}
+@media (min-width: 698px) {
+	.assistencia.f {background: url(../img/sprite/sprite-assistencia2.png) no-repeat 0 -422px; width:698px; height: 289px;}		
+}
+@media (min-width: 1200px) {
+	.assistencia.f { background: url(../img/sprite/sprite-assistencia.png) no-repeat top left;} 
+	.assistencia.f { background-position: 0 -1000px; width: 772px; height: 320px; margin:0 auto; } 
+
+}

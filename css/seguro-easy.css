@@ -19,10 +19,12 @@
 }
 .descubra::after {border-top-color:#8FB134;}
 .descubra p {
-	opacity: 1;
+	opacity: 0;
 	padding-left: 10px;
 	padding-right: 10px;
 }
+
+#danos-quebra div {opacity: 0;}
 
 @media (min-width: 1200px) {
 	.descubra {width:916px;}
@@ -51,8 +53,9 @@
 }
 
 .topo-beneficios {
+	opacity: 0;
 	position: absolute;
-	top:45%;
+	top:30%;
 	left:50%;
 	-webkit-transform: translate(-50%,-50%);
 	-ms-transform: translate(-50%,-50%);
@@ -96,6 +99,8 @@
 	display: block;
 }
 
+#danos-quebras div {opacity: 0;}
+
 @media (min-width: 1200px) {
 	.proteja ~ p {
 		width:388px;
@@ -120,6 +125,9 @@
 	padding:20px;
 }
 .article-beneficios div {padding:0; text-align: center;}
+
+.article-beneficios div {opacity: 0;}
+
 @media (min-width: 1200px) {
 	.container-beneficios {padding:0;}
 	.article-beneficios {
@@ -198,6 +206,7 @@
 	overflow: hidden;
 	font:400 30px "Open Sans";
 	color:#333;
+	opacity: 0;
 }
 
 .box-acionar ol {
@@ -207,6 +216,7 @@
 	padding:0;
 	margin:0 auto;
 	border-radius: 5px;
+	opacity: 0;
 }
 .box-acionar li {
 	position: relative;
@@ -276,6 +286,7 @@
 	color:#333;
 	margin:41px auto 20px;
 	overflow: hidden;
+	opacity: 0;
 }
 .box-contrate figure {
 	margin:0 auto;
@@ -358,7 +369,7 @@
 	.box-contrate li:nth-child(3) div {width: 223px;}
 	.box-contrate li:nth-child(4) div {width:129px;}
 }
-.box-contrate li {}
 
-
-.box-contrate ul {}
+.box-contrate ul {
+	opacity: 0;
+}
