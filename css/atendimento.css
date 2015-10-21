@@ -26,9 +26,9 @@
 	color:#333;
 	font:42px arial;
 	padding-bottom: 24px;
-	opacity: 0;
+	/*opacity: 0;*/
 }
-.container-atendimento p {display: none; opacity:0;}
+.container-atendimento p {display: none;/* opacity:0;*/}
 
 .atendimento-conosco {display: none;}
 .article-atendimento {
@@ -38,7 +38,7 @@
 }
 
 .article-atendimento h3 {
-	opacity: 0;
+	/*opacity: 0;*/
 	font:bold 42px arial;
 	color:#333;
 	width:277px;
@@ -46,7 +46,7 @@
 }
 
 .article-atendimento p {
-	opacity: 0;
+	/*opacity: 0;*/
 	font:24px arial;
 	color:#8D8D8D;
 	margin:17px auto;
@@ -54,7 +54,7 @@
 }
 
 .article-atendimento .btn {
-	opacity: 0;
+	/*opacity: 0;*/
 	padding:0;
 	margin:0 auto;
 	display: block;
