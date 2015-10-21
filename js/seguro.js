@@ -28,15 +28,15 @@ function tween(){
 		var e5 = $(".box-acionar").offset().top;
 		var e6 = $(".box-contrate").offset().top;
 
-		if($(window).scrollTop() + ($(window).height() / 5 + 200) > e1 && !$('.box-beneficios').hasClass('anim') ){
+		if($(window).scrollTop() + ($(window).height()) > e1 && !$('.box-beneficios').hasClass('anim') ){
            $('.box-beneficios').addClass('anim');
             TweenMax.fromTo($('.topo-beneficios'), .9, {y: 80, z: 1, alpha: 0}, {y: 0, z: 0, alpha: 1, ease: Quart.easeOut});
         }
-        if($(window).scrollTop() + ($(window).height() / 5 + 200) > e2 && !$('.descubra').hasClass('anim') ){
+        if($(window).scrollTop() + ($(window).height()) > e2 && !$('.descubra').hasClass('anim') ){
            $('.descubra').addClass('anim');
             TweenMax.fromTo($('.descubra p'), .9, {y: 80, z: 1, alpha: 0}, {y: 0, z: 0, alpha: 1, ease: Quart.easeOut});
         }
-        if($(window).scrollTop() + ($(window).height() / 5 + 200) > e3 && !$('#danos-quebras').hasClass('anim') ){
+        if($(window).scrollTop() + ($(window).height()) > e3 && !$('#danos-quebras').hasClass('anim') ){
            $('#danos-quebras').addClass('anim');
             TweenMax.fromTo($('#danos-quebras div'), .9, {y: 80, z: 1, alpha: 0}, {y: 0, z: 0, alpha: 1, ease: Quart.easeOut});
         }
