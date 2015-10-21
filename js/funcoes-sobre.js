@@ -15,6 +15,7 @@ function tween(){
 		var e3 = $("#vendas-corporativas").offset().top;
 		var e4 = $(".vitrine").offset().top;
 		var e5 = $("#educacional").offset().top;
+    var e6 = $('.modelos').offset().top;
 
 		if($(window).scrollTop() + ($(window).height()) > e1 && !$('#toda-linha').hasClass('anim') ){
            $('#toda-linha').addClass('anim');
@@ -23,7 +24,7 @@ function tween(){
             TweenMax.fromTo($('.toda-linha .produto-destaque'), .93, {y: 80, z: 1, alpha: 0}, {y: 0, z: 0, alpha: 1, delay: .10, ease: Quart.easeOut});
         }
 
-		if($(window).scrollTop() + ($(window).height()) > e2 && !$('#mapa').hasClass('anim') ){
+		    if($(window).scrollTop() + ($(window).height()) > e2 && !$('#mapa').hasClass('anim') ){
            $('#mapa').addClass('anim');
             TweenMax.fromTo($('.todo-brasil h3'), .9, {y: 80, z: 1, alpha: 0}, {y: 0, z: 0, alpha: 1, ease: Quart.easeOut});
             TweenMax.fromTo($('.todo-brasil p'), .93, {y: 80, z: 1, alpha: 0}, {y: 0, z: 0, alpha: 1, delay: .10, ease: Quart.easeOut});
@@ -44,6 +45,11 @@ function tween(){
            $('#educacional').addClass('anim');
             TweenMax.fromTo($('.box-educacional'), .9, {y: 80, z: 1, alpha: 0}, {y: 0, z: 0, alpha: 1, ease: Quart.easeOut});
         }
-        
+        if($(window).scrollTop() + ($(window).height()) > e6 && !$('.modelos').hasClass('anim') ){
+           $('.modelos').addClass('anim');
+            TweenMax.fromTo($('.modelos h3'), .9, {y: 90, z: 1, alpha: 0}, {y: 0, z: 0, alpha: 1, ease: Quart.easeOut});
+            TweenMax.fromTo($('.modelos .box-desktop'), .9, {y: 80, z: 1, alpha: 0}, {y: 0, z: 0, alpha: 1, ease: Quart.easeOut});
+            TweenMax.fromTo($('.modelos .box-mobile'), .9, {y: 80, z: 1, alpha: 0}, {y: 0, z: 0, alpha: 1, delay: .10, ease: Quart.easeOut});
+        }
 	});
 }

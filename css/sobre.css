@@ -176,9 +176,15 @@ Autor: André Luz da Silva;
 } 
 
 .modelos h5 {
-	color:#333;
+	color:#B0E12A;
 	font:42px Arial;
 	margin-top: 34px;
+}
+.modelos h3 {
+	font:40px arial;
+	opacity: 0;
+	color: #333;
+	margin: 0;
 }
 
 /*sobre*/
@@ -679,7 +685,7 @@ Autor: André Luz da Silva;
 *********************/
 .modelos {
 	text-align: center;
-	padding:80px 0;
+	padding:0px 0 40px;
 	overflow: hidden;
 }
 
@@ -716,6 +722,7 @@ Autor: André Luz da Silva;
 @media (min-width: 1200px) {
 	.box-desktop , .box-mobile {
 		width:413px;
+		margin-top: 20px;
 	}
 	.box-desktop p, .box-mobile p {
 		width:370px;
