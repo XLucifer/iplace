@@ -47,7 +47,7 @@ function tween(){
 		// var e3 = $('#quem-somos').offset().top;
 		// var e4 = $('.modelos').offset().top;
 
-		if($(window).scrollTop() + ($(window).height() / 5 + 200) > e2 && !$('#mapa').hasClass('anim') ){
+		if($(window).scrollTop() + ($(window).height()) > e2 && !$('#mapa').hasClass('anim') ){
            $('#mapa').addClass('anim');
             TweenMax.fromTo($('.todo-brasil h3'), .9, {y: 80, z: 1, alpha: 0}, {y: 0, z: 0, alpha: 1, ease: Quart.easeOut});
             TweenMax.fromTo($('.todo-brasil p'), .9, {y: 80, z: 1, alpha: 0}, {y: 0, z: 0, alpha: 1, delay: .10, ease: Quart.easeOut});
