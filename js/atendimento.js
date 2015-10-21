@@ -36,18 +36,18 @@ function tween(){
 		var e3 = $(".duvidas-frequentes").offset().top;
 		//var e4 = $(".duvida-esclarecida").offset().top;
 
-		if($(window).scrollTop() + ($(window).height() / 5 + 200) > e1 && !$('.container-atendimento').hasClass('anim') ){
+		if($(window).scrollTop() + ($(window).height() ) > e1 && !$('.container-atendimento').hasClass('anim') ){
            $('.container-atendimento').addClass('anim');
             TweenMax.fromTo($('.container-atendimento h2'), .6, {y: 80, z: 1, alpha: 0}, {y: 0, z: 0, alpha: 1, ease: Quart.easeOut});
             TweenMax.fromTo($('.container-atendimento p'), .9, {y: 80, z: 1, alpha: 0}, {y: 0, z: 0, alpha: 1, ease: Quart.easeOut});
         }
-        if($(window).scrollTop() + ($(window).height() / 5 + 200) > e2 && !$('.article-atendimento').hasClass('anim') ){
+        if($(window).scrollTop() + ($(window).height()) > e2 && !$('.article-atendimento').hasClass('anim') ){
            $('.article-atendimento').addClass('anim');
             TweenMax.fromTo($('.article-atendimento h3'), .6, {y: 80, z: 1, alpha: 0}, {y: 0, z: 0, alpha: 1, ease: Quart.easeOut});
             TweenMax.fromTo($('.article-atendimento p'), .9, {y: 80, z: 1, alpha: 0}, {y: 0, z: 0, alpha: 1, ease: Quart.easeOut});
             TweenMax.fromTo($('.article-atendimento a'), .9, {y: 80, z: 1, alpha: 0}, {y: 0, z: 0, alpha: 1, ease: Quart.easeOut});
         }
-        if($(window).scrollTop() + ($(window).height() / 5 + 200) > e3 && !$('.duvidas-frequentes').hasClass('anim') ){
+        if($(window).scrollTop() + ($(window).height()) > e3 && !$('.duvidas-frequentes').hasClass('anim') ){
            $('.duvidas-frequentes').addClass('anim');
             TweenMax.fromTo($('.duvidas-frequentes h3'), .9, {y: 80, z: 1, alpha: 0}, {y: 0, z: 0, alpha: 1, ease: Quart.easeOut});
             TweenMax.fromTo($('.duvidas-frequentes hr'), .9, {y: 80, z: 1, alpha: 0}, {y: 0, z: 0, alpha: 1, ease: Quart.easeOut});
