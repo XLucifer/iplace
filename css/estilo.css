@@ -345,6 +345,7 @@ Autor: André Luz da Silva;
 @media (min-width: 768px) {
 	.box-iplaces h6 {
 		font:bold 13px arial;
+		width: 200px;
 	}
 }
 
@@ -516,6 +517,7 @@ Autor: André Luz da Silva;
 }
 
 .box-iplaces li {
+	min-height: 124px;
 	float: left;
 	overflow: hidden;
 	width:228px;	
@@ -550,6 +552,8 @@ Autor: André Luz da Silva;
 	.box-iplaces small {
 		font:13px/20px arial;
 		color:#666;
+		display: block;
+		width:170px;
 	}
 	.box-iplaces a {
 		font:13px arial;
@@ -572,7 +576,7 @@ Autor: André Luz da Silva;
 
 .todo-brasil a {
 	text-transform: uppercase;
-	color:#999;
+	color:#666;
 	font:12px/36px Arial;
 	height: 36px;
 	padding-top:0;
@@ -580,6 +584,8 @@ Autor: André Luz da Silva;
 	margin:0 auto;
 	display: block;
 	width:253px;
+	border-color:#666;
+	opacity: 0;
 }
 @media (min-width: 1200px) {
 	.todo-brasil a {
@@ -604,7 +610,7 @@ Autor: André Luz da Silva;
 	#mapa img {display: block;}
 	.todo-brasil p {
 		text-align: left;
-		font-size: 17px;
+		font-size: 16px;
 	}
 }
 
@@ -1219,7 +1225,9 @@ hr.container {padding:0;}
 }
 
 .box-vantagem div {padding: 0; opacity: 0;}
-.box-vantagem .btn {
+.box-vantagem .btn,
+.box-vantagem .btn:focus,
+.box-vantagem .btn:active {
 	border-color:#9ACC00;
 	color:#9ACC00;
 	background: none;
