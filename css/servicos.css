@@ -1,0 +1,400 @@
+/*servicos*/
+/*************************
+Autor: André Luz da Silva;
+/***************************/
+
+
+.ani {
+	-webkit-transition: all .25s;
+	-o-transition: all .25s;
+	transition: all .25s;
+}
+
+/*inicio*/
+#inicio {
+	background:url(../img/background/bg-intro.jpg) repeat;
+	position: relative;
+}
+
+
+.tt-destaque + hr {
+	width:180px;
+	height: 1px;
+	border-top:1px solid #B8CF2E;
+}
+
+.pad0 {padding:0;}
+.over {overflow: hidden;}
+
+.tt-servicos {
+	color:#464646;
+	font:48px arial;
+}
+.txt-servicos {
+	color:#333;
+	font:18px/35px arial;
+	margin: 0 auto 30px;
+}
+
+.tt-descubra {
+	color:#fff;
+	font: 400 30px "Open Sans";
+	text-align: center;
+	margin:0;
+	padding: 30px 10px;
+	background:#96CC0C;
+}
+
+.art-tecnica .container {position: relative;}
+
+.art-tecnica .f {
+	position: absolute;
+	right:0;
+}
+
+.box-tecnica {
+	overflow: hidden;
+}
+.box-tecnica figure {
+	float: left;
+	margin:13px 20px 0 0;
+}
+
+.box-tecnica .btn {
+	display: block;
+	margin: 0 auto;
+	width: 104px;
+}
+
+.tt-assistencia {
+	color:#666;
+	font:300 48px "Open Sans";
+	padding: 0;
+	margin: 0 0 14px 0;
+	text-align: center;
+}
+
+.tt-assistencia + p {
+	font:18px/30px arial;
+	color:#333;
+	text-align: center;
+	margin-bottom: 18px;
+}
+
+.btn-default {
+	border-color:#99CC00;
+	color: #99CC00;
+	font:12px arial;
+	background-color: transparent;
+}
+.btn-default:focus,
+.btn-default:active {
+	border-color:#333 !important;
+	color:#333 !important;
+	background:transparent !important;
+}
+
+.btn-default:hover {
+	border-color:#333;
+	color:#333;
+	background:transparent;
+}
+
+.art-seguro {padding-top: 21px;}
+
+.art-seguro h3 {
+	font:300 48px "Open Sans";
+	color:#666;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+.art-seguro p {
+	font:18px arial;
+	color: #666;
+	margin:20px 0;
+}
+
+.art-seguro .btn {
+	width: 244px;
+	margin: 0 auto;
+	display: block;
+}
+
+.box-expressa {
+	background:#9EC23A;
+	padding-bottom: 40px;
+	color: #fff;
+	position: relative;
+}
+.box-expressa h3 {
+	font:300 42px/50px "Open Sans";
+	text-align: center;
+	padding: 73px 0 0 0;
+	margin: 0;
+}
+
+.box-expressa p {
+	font:18px/25px arial;
+	padding: 13px 0 53px 0;
+	text-align: center;
+}
+
+.box-expressa .btn-default {
+	border-color:#fff;
+	color:#fff;
+	width: 276px;
+	margin: 0 auto;
+	display: block;
+}
+.box-expressa .btn-default:hover {
+	border-color:#333;
+	color:#333;
+	background:transparent;
+}
+
+.box-case {
+	background: #eee;
+	margin: 0 auto 30px;
+	overflow: hidden;
+	padding-bottom: 40px;
+}
+.case h3 {
+	margin: 20px auto;
+	padding: 0;
+	text-indent: -9000em;
+}
+.case h4 {
+	color:#666;
+	font:24px arial;
+	padding: 0;
+	margin: 0;
+}
+.case p {
+	color:#666;
+	font:16px arial;
+	padding: 0;
+	margin: 0;
+}
+.case .btn {
+	text-transform: uppercase;
+	font:17px/46px arial;
+	width: 157px;
+	height: 46px;
+	padding: 0;
+	margin:0 auto;
+	display: block;
+}
+
+.tt-upgrade {
+	color:#98AD08;
+	font:400 42px "Open Sans";
+	margin:13px 0 5px 0;
+	text-align: center;
+}
+
+.tt-upgrade + p {
+	color: #666;
+	font:18px/30px arial;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.txt-atualizado {
+	font:400 35px "Open Sans";
+	color:#666;
+	text-align: center;
+	margin:20px 0;
+}
+
+.sprite-servico { background: url(../img/sprite/sprite-servicos.png) no-repeat top left; width: 317px; height: 294px;  } 
+.sprite-servico.a { background-position: 0 0; width: 1240px; height: 191px; margin: 0 auto; display: none; } 
+.sprite-servico.b { background-position: 0 -241px; width: 40px; height: 40px; display: none;} 
+.sprite-servico.c { background-position: 0 -331px; } 
+.sprite-servico.d { background-position: 0 -675px; width: 71px; height: 100px; display: none;} 
+.sprite-servico.e { background-position: 0 -825px; width: 275px; height: 215px; display: none;} 
+.sprite-servico.f { background-position: 0 -1090px; width: 668px; height: 349px; display: none; } 
+.sprite-servico.g { background-position: 0 -2393px; width: 820px; height: 260px; display: none;} 
+.sprite-servico.h { background-position: 0 -1489px; display: none; } 
+.sprite-servico.i { background-position: 0 -1833px; width: 1160px; height: 352px; display: none;} 
+.sprite-servico.j { background-position: 0 -2235px; width: 174px; height: 108px; } 
+.sprite-servico.l { background-position: 0 -3240px; width: 451px; height: 407px; margin:0 auto; display: none;} 
+.sprite-servico.m { background-position: 0 -2703px; width: 361px; height: 398px; margin: 0 auto;} 
+.sprite-servico.n { background-position: 0 -3151px; width: 39px; height: 39px; margin:0 auto; } 
+
+
+.container-seguro {
+	margin-bottom: 30px;
+	position: relative;
+}
+.container-seguro .h {
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 433px;
+}
+.container-seguro .e {
+	position: absolute;
+	bottom: 83px;
+	right: 0;
+}
+.head-seguro {
+	margin: 0 auto;
+}
+.head-seguro figure {float: left;}
+
+.container-expressa {
+	position: relative;
+	z-index: 1;
+}
+
+.box-capinha {
+	width: 275px;
+	margin:20px auto;	
+}
+
+.box-upgrade {margin-bottom: 40px;}
+
+.tt-upgrade ~ .btn {
+	display: block; 
+	margin:0 auto 30px;
+	width: 104px;
+}
+
+@media (min-width: 1200px) {
+	.tt-upgrade ~ .btn {
+		display: inline-block;
+		margin: 0;
+	}
+	.tt-upgrade + p {text-align: left;}	
+
+	.box-capinha {
+		float: left;
+		margin:26px 20px;
+		overflow: hidden;
+	}
+
+	.case {overflow: hidden;}
+	.box-case {
+		padding:29px 0 0 0;
+		overflow: hidden;
+	}
+	.box-case header {
+		overflow: hidden;
+		width:675px;
+		margin: 0 auto 20px;
+	}
+	.case h3 {
+		margin: 0;
+		float: left;
+		overflow: hidden;
+	}
+
+	.sprite-servico.i {
+		display: block;
+		margin:0 auto;
+		position: absolute;
+		top:235px;
+		left:7%;
+		-webkit-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+		transform: translateX(-50%);
+	}
+	
+	.box-tecnica div {float: left;}
+
+	.art-seguro {min-height: 570px;}
+	
+	.sprite-servico.b,
+	.sprite-servico.d,
+	.sprite-servico.g,
+	.sprite-servico.h,
+	.sprite-servico.e {display: block;}
+
+	.sprite-servico.g {margin: 0 auto 44px;}
+
+	.head-seguro {
+		width: 389px;
+		margin: 0 auto 60px;
+	}
+	.txt-servicos {
+		width: 967px;
+		margin-bottom: 155px;
+		overflow: hidden;
+	}
+	.box-case {
+		width: 1060px;
+		margin-bottom: 68px;
+	}
+	.tt-assistencia, .tt-assistencia + p {text-align: left;}
+	.box-tecnica {margin-top: 100px;}
+	.box-tecnica .btn {display: inline-block;}
+
+	.box-expressa {min-height: 570px; padding-bottom: 0;}
+
+	.sprite-servico.l {display: block;}
+
+	.case .btn {
+		display: inline-block;
+		float: left;
+		margin-top: 26px;
+	}
+
+	.box-upgrade div {
+		padding:0;
+	}
+	
+	.tt-upgrade {
+		text-align: left;
+		margin-top: 117px;
+	}
+	.sprite-servico.n {
+		float: left;
+		margin-top: 128px;
+		margin-right:19px;
+	}
+
+	.sprite-servico.n + div {
+		float: left;
+		width: 318px;
+	}
+
+	.txt-atualizado {margin-top: 117px;}
+
+	.art-seguro p {margin:0;}
+}
+
+@media (min-width: 1240px) {
+	.tt-descubra {
+		background: url(../img/sprite/sprite-servicos.png) no-repeat;
+		width: 1240px; 
+		height: 191px; 
+		margin: 0 auto;
+		position: absolute;
+		top:-80px;
+		left:50%;
+		padding-top: 38px;
+		padding-left: 0;
+		padding-right: 0;
+		-webkit-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+		transform: translateX(-50%);
+	}
+
+	.art-tecnica {
+		padding:132px 0 124px;
+		overflow: hidden;
+	}
+	.sprite-servico.f {display: block;}
+}
+
+@media (min-width: 1318px) {
+	.box-art-seguro {
+		width: 1318px;
+		margin:0 auto;
+	}
+}
