@@ -242,6 +242,7 @@ Autor: André Luz da Silva;
 }
 .head-seguro {
 	margin: 0 auto;
+	opacity: 0;
 }
 .head-seguro figure {float: left;}
 
@@ -292,16 +293,19 @@ Autor: André Luz da Silva;
 		overflow: hidden;
 	}
 
-	.sprite-servico.i {
-		display: block;
-		margin:0 auto;
+	.container-express {
 		position: absolute;
-		top:235px;
-		left:7%;
+		bottom:0;
+		left:50%;
 		-webkit-transform: translateX(-50%);
 		-ms-transform: translateX(-50%);
 		-o-transform: translateX(-50%);
-		transform: translateX(-50%);
+		transform: translateX(-50%);		
+	}
+
+	.sprite-servico.i {
+		display: block;
+		margin:0 auto;	
 	}
 	
 	.box-tecnica div {float: left;}
