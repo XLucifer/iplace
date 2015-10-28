@@ -17,6 +17,15 @@
 .atendimento-contato div:hover .atendimento.j { background-position: -670px -1479px; display: block; } 
 .atendimento-contato div:hover a {color:#999;text-decoration: underline;}
 
+.desk {display: none !important;}
+.mobile {display: block !important;}
+
+@media (min-width: 1200px) {
+	.desk {display: block !important;}
+	.mobile {display: none !important;}
+}
+
+
 #geral-atendimento {
 	margin:20px auto 0;
 	width: 95%;
@@ -245,7 +254,7 @@
 	border-bottom:2px solid #000;	
 } 
 
-@media (min-width: 1200px) {
+
 	
 	
 	.black div::after {
@@ -283,7 +292,7 @@
 	    border-right: 22px solid transparent;
 	    border-bottom: 17px solid #000;
 	}
-}
+
 
 .black.invert div::before {
 	top:-3px;
