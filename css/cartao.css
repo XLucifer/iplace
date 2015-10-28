@@ -48,6 +48,23 @@ Autor: André Luz da Silva;
 .vantagens.calendar { background-position: 0 -350px; } 
 .vantagens.medalha { background-position: 0 -525px; width: 166px; } 
 
+.carousel-vantagem {
+	padding-bottom: 300px;
+}
+.carousel-vantagem h6 {padding-top: 31px;}
+#ico-vantagens {
+	bottom: -200px;
+}
+#ico-vantagens li {
+	width: 31px;
+	height: 31px;
+	border-radius: 100%;
+	background: #999;
+	border:0;
+	margin:0 15px 0 0;
+}
+#ico-vantagens li.active {background: #96CC0C;}
+
 @media (min-width: 1200px) {
 	.store { 
 		background: url(../img/sprite/bg-store.png) no-repeat top left;
@@ -1534,7 +1551,7 @@ hr.container {padding:0;}
 
 .intro h2 {
 	color:#666;
-	font:400 50px "Open Sans";
+	font:400 70px "Open Sans";
 	padding: 0;
 	padding-bottom: 26px;
 }
@@ -1543,7 +1560,7 @@ hr.container {padding:0;}
 }
 .box-cartao {
 	padding-top: 37px;
-	padding-bottom: 30px;
+	padding-bottom: 97px;
 	text-align: center;
 }
 .box-cartao + figure {
@@ -1553,6 +1570,7 @@ hr.container {padding:0;}
 	display: none;
 }
 @media (min-width: 1200px) {
+	.intro h2 {font-size: 50px;}
 	.box-cartao + figure {display: block;}
 	.box-cartao {
 		padding:130px 0 157px 29px;
@@ -1562,13 +1580,19 @@ hr.container {padding:0;}
 }
 .box-cartao p {
 	color:#666;
-	font:400 13px "Open Sans";
+	font:400 25px "Open Sans";
 }
 
 .box-cartao .btn {
 	border-color:#9ACC00;
 	color:#9ACC00;
 	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: bold;
+	width: 262px;
+	border-width: 2px;
+	height: 68px;
+	line-height: 55px;
 }
 
 .box-cartao .btn:hover {
@@ -1585,11 +1609,38 @@ hr.container {padding:0;}
 	text-align: center;
 }
 
-.box-anuidade {margin: 0 auto;}
+.box-anuidade {
+	margin: 0 auto;
+	padding:37px 0;
+}
+.box-anuidade div {opacity: 0;}
+.vantagem {position: relative;}
+.vantagem::after {
+	content: "";
+	display: block;
+	width:28px;
+	height: 17px;
+	margin:0 auto;
+	border-left: 18px solid transparent;
+	border-right: 18px solid transparent;
+	border-top: 17px solid #96CC0C;
+	position: absolute;
+	bottom:-17px;
+	left:50%;
+}
+
+.box-anuidade .col-lg-6:first-child {padding-bottom: 66px;}
 
 .box-todas-vantagens {
 	margin:0 auto;
 	background: #eee;
+}
+
+.box-todas-vantagens h3 {
+	margin-top: 0;
+	padding:76px 0;
+	color:#666;
+	font:28px arial;
 }
 
 .box-list-vantagens {
@@ -1598,6 +1649,10 @@ hr.container {padding:0;}
 	overflow: hidden;
 }
 
+.box-list-vantagens h6 {
+	color:#666;
+	font:38px arial;
+}
 .box-list-vantagens p {
 	color:#8A8A7B;
 	font:12px arial;
@@ -1605,6 +1660,7 @@ hr.container {padding:0;}
 
 .box-condicoes {
 	margin:0 auto;
+	opacity: 0;
 }
 .box-condicoes figure {
 	display: none;
@@ -1612,32 +1668,46 @@ hr.container {padding:0;}
 
 }
 .box-condicoes h5  {
-	font:32px arial;
+	font:38px arial;
 	text-align: center;
 	padding:10px 0;
 	margin:0;
 }
 .box-condicoes p {
-	font:20px arial;
+	font:25px arial !important;
 	text-align: center;
 	margin:0;
 }
-
 .box-condicoes .btn {
 	margin:20px auto;
-	width: 173px;
-	height: 50px;
+	width: 262px;
+	height: 68px;
 	padding:0;
 	text-transform: uppercase;
 	color:#9ACC00;
 	border-color: #9ACC00;
-	font:15px/50px arial;
+	border-width: 2px;
+	font:30px/68px arial;
+	border-radius: 10px;
 	background-color: transparent;
 	display: block;
 }
 .box-condicoes .btn:hover {
 	border-color:#fff;
 	color:#fff;
+}
+
+@media (min-width: 1200px) {
+	.box-condicoes h5 {font-size: 32px;}
+	.box-condicoes p {font-size: 20px !important;}
+	.box-condicoes .btn {
+		font-size: 15px;
+		border-width: 1px;
+		width: 173px;
+		height: 50px;
+		line-height: 50px;
+		border-radius: 4px;
+	}
 }
 
 .cartao {
@@ -1661,10 +1731,38 @@ hr.container {padding:0;}
 	overflow: hidden;
 }
 .state select {
-	margin-bottom: 10px;
+	border-width: 2px;
+	margin-bottom: 30px;
 	border-radius: 0;
+	height: 68px;
 }
-.state input[type="submit"] {margin: 0;float: left;}
+
+.state input[type="submit"] {
+	margin:0 auto;
+	width:182px;
+	height: 68px;
+	font: 30px arial;
+	color:#999;
+	border-width: 2px;
+	display: block;
+}
+@media (min-width: 1200px) {
+	.state select {
+		height: 36px;
+		border-width: 1px;
+		margin-bottom: 10px;
+	}
+
+	.state input[type="submit"] {
+		margin: 0;
+		float: left;
+		width: 84px;
+		border-width: 1px;
+		font-size: 15px;
+		height: 36px;
+	}	
+}
+
 
 .state hr {
 	border:0;
@@ -1672,7 +1770,6 @@ hr.container {padding:0;}
 	border-bottom: 1px solid #B6E100;
 	clear: both;
 	padding: 10px 0;
-	margin-bottom: 20px;
 }
 
 .state-result figcaption {
@@ -1686,18 +1783,100 @@ hr.container {padding:0;}
 	margin-bottom: 5px;
 }
 
+.mobol.state-result h6 {
+	font:bold 25px arial;
+	color:#666;
+}
+.mobol.state-result div {margin: 0;}
+
+.mobol.state-result .btn {
+	display: block;
+	width: 194px;
+	height: 54px;
+	border-width: 2px;
+	font:bold 25px arial;
+	margin-bottom: 20px;
+	color: #999;
+	line-height: 37px;
+	border-radius: 8px;
+}
+
+
+
 .state-result div {margin: 0 auto;}
 
 .state-result {overflow: hidden;}
 .state-result h5 {
-	color: #666;
-	font:20px arial;
-	margin: 0 0 25px;
+	color: #999;
+	font:28px arial;
+	padding:40px 0;
+	margin:0;
 	overflow: hidden;
+	text-align: center;
+}
+
+.lojao {
+	margin: 0 auto;
 }
 
 .box-cartoes {
 	margin:0 auto;
+}
+.box-cartoes h4 {
+	color:#666;
+	font:38px arial;
+	text-align: center;
+	padding-top: 104px;
+	padding-bottom: 20px;
+}
+.box-cartoes p {
+	font:25px arial;
+	color:#666;
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+.mobol p {text-align: left;}
+
+@media (min-width: 320px) {
+	.footer-result {
+		margin:0 auto;
+		width: 320px;
+		overflow: hidden;
+	}
+	.mobol.state-result h6 {font-size: 23px;}
+	.footer-result div:nth-child(1) {float: left;}
+	.footer-result div:nth-child(2) {float: left;}
+}
+@media (min-width: 480px) {
+	.footer-result {width: 450px;}
+	
+}
+@media (min-width: 767px) {
+	.footer-result {width: 588px;}
+	.footer-result div:nth-child(2) {float: right;}
+	
+}
+
+@media (min-width: 1200px) {
+	
+	.state-result h5 {
+		text-align: left;
+		color:#666;
+		font-size: 20px;
+		padding:20px 0;
+	}
+
+	.box-cartoes h4 {
+		text-align: left;
+		font-size: 35px;
+		padding:0;
+	}
+	.box-cartoes p {
+		font-size: 13px;
+		text-align: left;
+		padding-bottom: 20px;
+	}
 }
 
 .state-result .btn {
@@ -1712,14 +1891,51 @@ hr.container {padding:0;}
 	color:#9ACC00;
 }
 
+.desktop {display: none !important;}
+
+
+.sprite-cartao-mobol { background: url(../img/sprite/sprite-cartao-mobol.png) no-repeat top left;  } 
+.sprite-cartao-mobol.a { background-position: 0 0; width: 347px; height: 249px; margin: 0 auto;} 
+.sprite-cartao-mobol.b { background-position: 0 -299px; width: 131px; height: 106px; display: block; margin:0 auto; } 
+.sprite-cartao-mobol.c { background-position: 0 -455px; width: 588px; height: 369px; } 
+
+.sprite-cartao-mobol.b {
+	float: none;
+	margin-bottom: 30px;
+}
 
 @media (min-width: 1200px) {
+
+	.box-list-vantagens h6 {
+		font-size: 20px;
+		color:#333;
+	}
+
+	.vantagem::after {display: none;}
+	.box-anuidade {padding: 0;}
+	.box-anuidade .col-lg-6:first-child {padding: 0;}
+
+	.box-cartao .btn {
+		font-size: 12px;
+		font-weight: normal;
+		border-width: 1px;
+		width: 104px;
+		height: 30px;
+		line-height: 18px;
+	}
+
+	.box-cartao p {font-size: 13px;}
+
+	.mobol {display: none !important;}
+
+	.desktop {display: block !important;}
+
 	.box-select {margin-right:15px;}
 	.box-select,.box-submit {
 		float: left;
 	}
 
-	.box-cartoes {width: 1141px;}
+	.box-cartoes {width: 1141px; padding-top: 80px;}
 	.state-result div {margin: 0;}
 
 	.cartao {text-align: left;}

@@ -15,7 +15,7 @@
 		<section class="">	
 
 			<!-- menu principal -->
-			<nav class="menu-principal container">
+			<nav class="menu-principal container desktop">
 				<ul>
 					<li class="ativo"><a href="#inicio" id="" class="">peça o seu</a></li>
 					<li><a href="#vantagem" id="" class="">conheça as vantagens</a></li>
@@ -32,24 +32,25 @@
 				<div class="intro over">					
 					<div class="container">						
 						<div class="box-cartao">
-						<h2>Cartão iPlace</h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit. Ut ac lacinia mi. Maecenas eu feugiat neque. <br>
-							 Pellentesque habitant morbi tristique senectus et <br>
-							 netus et malesuada fames ac turpis egestas.
-							<br> <br>
-							<b>Você pode pedir seu cartão pelo site ou <br> diretamente em uma loja iPlace.</b>
-						</p>
-						<br>
-						<a href="#" title="Peça o seu" class="btn btn-default ani">Peça o seu</a>
+							<figure class="sprite-cartao-mobol a mobol"></figure>
+							<h2>Cartão iPlace</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit. Ut ac lacinia mi. Maecenas eu feugiat neque. <br>
+								 Pellentesque habitant morbi tristique senectus et <br>
+								 netus et malesuada fames ac turpis egestas.
+								<br> <br>
+								<b>Você pode pedir seu cartão pelo site ou <br> diretamente em uma loja iPlace.</b>
+							</p>
+							<br>
+							<a href="#" title="Peça o seu" class="btn btn-default ani">Peça o seu</a>
 						</div>						
-						<figure class="sprite-cartao a"></figure>
+						<figure class="sprite-cartao a" data-parallax='{"y": -30}'></figure>
 					</div>
 				</div>
 				<!-- /INTRO -->
 			</section>
 
-			<section id="vantagem" class="over clear vantagem">
+			<section id="vantagem" class="clear vantagem">
 				<div class="sprite-cartao h">
 					<!-- box verde -->
 					<div class="box-anuidade over">
@@ -82,7 +83,7 @@
 
 			<section id="cartao" class="cartao">
 				<!-- box cinza -->
-				<div class="box-todas-vantagens over">
+				<div class="box-todas-vantagens over desktop">
 					<h3 class="text-center">Conheça todas as vantagens do Cartão iPlace:</h3>
 					
 					<section class="box-list-vantagens">
@@ -141,6 +142,64 @@
 						</div>
 					</section>
 				</div>
+				<div class="box-todas-vantagens over mobol carousel-vantagem">
+					<h3 class="text-center">Conheça todas as vantagens do Cartão iPlace:</h3>
+
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+						  <!-- Indicators -->
+						  <ol class="carousel-indicators" id="ico-vantagens">
+						    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						    <li data-target="#myCarousel" data-slide-to="1"></li>
+						    <li data-target="#myCarousel" data-slide-to="2"></li>
+						    <li data-target="#myCarousel" data-slide-to="3"></li>
+						  </ol>
+
+					  	<!-- Wrapper for slides -->
+					  	<div class="carousel-inner" role="listbox">
+						    <div class="item active">
+						    	<div class="box-list-vantagens">
+						    		<div class="sprite-cartao d"></div>
+						    		<h6 class="text-center">Cartão gratuito</h6>
+						    	</div>						      
+						    </div>
+
+						    <div class="item">
+						    	<div class="box-list-vantagens">
+						    		<div class="sprite-cartao e"></div>	
+						    		<h6 class="text-center">
+										Até 45 dias 
+										para pagar
+									</h6>		
+						    	</div>						      
+						    </div>
+
+						    <div class="item">
+						    	<div class="box-list-vantagens">
+						    		<div class="sprite-cartao f"></div>	
+						    		<h6 class="text-center">
+										Parcelamento
+										em até 24x
+									</h6>	
+						    	</div>						      
+						    </div>
+
+						    <div class="item">
+						    	<div class="box-list-vantagens">
+						    		<div class="sprite-cartao g"></div>
+						    		<h6 class="text-center">
+										Benefícios 
+										Vital Help*
+									</h6>
+						    	</div>
+						      
+						    </div>
+					  	</div>
+
+						 
+					</div>
+					
+					
+				</div>
 				<!-- /box cinza -->
 
 				<!-- box grey -->
@@ -149,6 +208,7 @@
 						<div class="col-lg-10 pad0">
 							<div>
 								<figure class="sprite-cartao i"></figure>
+								<figure class="sprite-cartao-mobol b mobol"></figure>
 								<h5>
 									CONDIÇÕES DIFERENCIADAS NAS LOJAS IPLACE
 								</h5>
@@ -193,7 +253,7 @@
 							<hr>
 						</form>
 
-						<div class="state-result">
+						<div class="state-result desktop">
 							<h5>RS - Porto Alegre:</h5>
 
 							<div class="col-lg-6 pad0">
@@ -229,6 +289,35 @@
 								</figure>
 							</div>
 						</div>
+
+						<div class="state-result mobol">
+							<h5>RS - Porto Alegre:</h5>
+
+							<div class="col-lg-12 pad0">
+								<figure>
+									<img src="img/sprite/img-lojao.png" class="img-responsive lojao" alt="">
+									
+									<figcaption class="footer-result">										
+										<div class="">
+											<h6>iPlace Shopping Iguatemi</h6>
+											<p>
+												Porto Alegre – RS <br>
+												Telefone: (51) 3084-0183
+											</p>	
+										</div>
+										
+										<div class="">
+											<a href="mailto:" class="btn btn-default ani" title="e-mail">e-mail</a>	
+											
+											
+											<a href="#" title="Fale conosco" class="btn btn-default ani">fale conosco</a>	
+																						
+										</div>										
+									</figcaption>
+								</figure>
+							</div>
+							
+						</div>
 					</div>
 				</div>
 			</section>
@@ -239,8 +328,9 @@
 
 		<!-- scripts -->
 		<script src="js/jquery-1.11.3.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 		<script src="js/tweenMax.js"></script>
+		<script src="js/jquery.parallax-scroll.js"></script>
 		<script src="js/cartao.js"></script>
 		<!-- /scripts -->
 	</body>
