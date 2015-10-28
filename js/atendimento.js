@@ -22,6 +22,25 @@ $(document).ready(function() {
 		});		
 		
 	});
+	$("img.mobol").hide();
+	$(".tire-duvidas .ativo").each(function(){
+		$(this).on("click",function(e) {
+			e.preventDefault();
+			if($(this).find("img.desktop").is(":visible")){
+				$("img.desktop").hide();
+				$("img.mobol").show();
+			}
+			else {
+				$("img.desktop").show();
+				$("img.mobol").hide();
+			}
+		});
+	});
+	$(".tire-duvidas a:not('.ativo')").click(function(e){
+		e.preventDefault();
+		$("img.desktop").show();
+		$("img.mobol").hide();
+	});
 
 });
 
