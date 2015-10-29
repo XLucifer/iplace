@@ -1,3 +1,44 @@
+.sprite-go { 
+	background: url(../img/sprite/sprite-go.png) no-repeat top left; width: 590px; height: 443px;  
+} 
+.sprite-go.a { 
+	background-position: 0 0; 
+	width: 257px; 
+	height: 44px; 
+} 
+.sprite-go.b { 
+	background-position: 0 -94px; 
+	width: 715px; 
+	height: 288px; 
+} 
+
+.sprite-go.d { 
+	background-position: 0 -925px; 
+	float: left;
+} 
+.sprite-go.d:hover { background-position: 0 -1418px; } 
+.sprite-go.e { 
+	background-position: 0 -1911px; 
+	float: left; 
+	margin-right: 20px;
+} 
+.sprite-go.e:hover { background-position: 0 -2404px; } 
+.sprite-go.f { 
+	background-position: 0 -2897px; 
+	float: left; 
+} 
+.sprite-go.f:hover { background-position: 0 -3390px; } 
+.sprite-go.c { 
+	margin-right:20px;
+	margin-bottom: 20px;
+	background-position: 0 -3883px; 
+	height: 443px; 
+	float: left;
+} 
+.sprite-go.c:hover {
+	background-position: 0 -432px; 
+}
+
 .ani {
 	-webkit-transition: all .25s;
 	-o-transition: all .25s;
@@ -116,60 +157,18 @@ ul {
 .banners .container {opacity: 0;}
 @media (min-width: 1366px) {
 	.banners {
-		background: url(../img/sprite/banners.png) no-repeat top left;  
+		
 		display: block;
-		height: 350px;
+		height: 908px;
 		clear: both;
 		width: 1201px;
 		margin: 0 auto 111px;
 	}
 }
-.banners.a { 
-	background-position: 0 0; 
-	width: 800px; 
-	height: 350px;
-	float: left;
-	clear: none;
-	padding-top: 0;
-	margin-bottom: 2px;
-	margin-right:2px;
-} 
+ 
 
-.banners.b { 
-	background-position: 0 -720px; 
-	width: 399px; 
-	height: 350px; 
-	float: left;
-	clear: none; 
-	margin-top: 0;
-	margin-bottom: 2px;
-} 
+ 
 
-.banners.c { 
-	background-position: 0 -1440px; 
-	float: left; 
-	width: 399px;
-	height: 350px;
-	clear: none;
-	margin-top: 0;
-	margin-right:2px;
-} 
-
-.banners.d { 
-	background-position: 0 -2160px; 
-	width: 800px; 
-	float: left; 
-	height: 350px;
-	width: 800px;
-	clear: none;	
-	margin-top: 0;
-} 
-
-
-.banners.a:hover {background-position: 0 -360px; width: 800px;}
-.banners.b:hover {background-position: 0 -1080px;}
-.banners.c:hover {background-position: 0 -1800px; }
-.banners.d:hover {background-position: 0 -2520px; width: 800px;}
 
 /*produros*/
 .produtos {
@@ -335,16 +334,17 @@ ul {
 }
 @media (min-width: 1200px) {
 	.conteudo {
-		background:url(../img/background/bg-03.jpg) repeat-x;
-		padding-top: 250px;
+		padding-top:120px;
 	}
 }
 
 /*cabeçalho*/
 #cabecalho {
-	min-height: 440px;
 	padding:126px 0 30px 0;
 	position: relative;
+}
+@media (min-width: 1200px) {
+	#cabecalho {min-height: 440px;}
 }
 #cabecalho h2 {
 	color:#545476;
@@ -373,12 +373,20 @@ ul {
 }
 
 #cabecalho select {
-	width: 207px;
+	width: 257px;
 	height: 44px;
-	border-radius: 0;
 	margin:0 auto;
 	color:#999;
 	font:14px arial;
+	color:#005BB1;
+	font:14px arial;
+	text-transform: uppercase;
+	background: url(../img/sprite/sprite-go.png) no-repeat;
+	border:0;
+	 -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
 }
 .topo-marca {
 	margin:0 auto;
@@ -407,6 +415,10 @@ ul {
 	z-index: 0;
 }
 
+@media (min-width: 1200px) {
+	#cabecalho {padding-bottom:120px ;}
+	.topo-marca {padding-top: 84px;}
+}
 
 .container-portable {
 	clear: both;
