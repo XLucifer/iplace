@@ -1772,6 +1772,9 @@ hr.container {padding:0;}
 	padding: 10px 0;
 }
 
+
+
+
 .state-result figcaption {
 	font-family: "arial";
 	font-size: 13px;
@@ -1805,14 +1808,39 @@ hr.container {padding:0;}
 
 .state-result div {margin: 0 auto;}
 
-.state-result {overflow: hidden;}
-.state-result h5 {
-	color: #999;
-	font:28px arial;
-	padding:40px 0;
+.state-result {
+	overflow: auto;
+	height: 350px;
+	margin-top: 30px;
+}
+
+.state-result::-webkit-scrollbar { 
+	width:18px; 
+	background:#eee; 
+	border-radius: 10px;
+} /* configurando scroll */
+
+.state-result::-webkit-scrollbar-thumb { 
+	background:url(../img/background/bg-scroll-cartao.jpg) no-repeat center top;  
+	width:10px;
+	height: 91px;
+	margin: 0 auto;
+}
+
+.state-result dt {
+	color: #000;
+	font:15px arial;
+	padding:0 0 5px;
 	margin:0;
 	overflow: hidden;
-	text-align: center;
+	border-bottom:1px solid #eee;
+}
+.state-result dd {padding-bottom: 20px;}
+.state-result div {
+	border-bottom:1px solid #eee;
+	padding:5px 0;	
+	color:#666;
+	font-family: arial;
 }
 
 .lojao {
