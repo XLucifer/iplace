@@ -1982,3 +1982,12 @@ hr.container {padding:0;}
 		width: 908px;
 	}
 }
+
+#carousel-state {
+	border-bottom:2px solid #B6E100;
+	margin-bottom: 150px;
+}
+
+#carousel-state #ico-vantagens {
+	bottom: -100px;
+}
