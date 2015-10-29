@@ -9,6 +9,23 @@
 		<link rel="stylesheet" href="css/sobre.css">
 	</head>
 	<body>
+		
+		<!-- menu principal -->
+		<nav class="menu-principal container">
+			<ul>
+				<li class="ativo">
+					<a href="#lojas" id="" class="">inicio</a>
+				</li>
+				<li>
+					<a href="#sobre" id="" class="">sobre as lojas</a>
+				</li>
+				<li><a href="#educacional" id="" class="">educacional</a></li>
+				<li><a href="#vendas-corporativas" id="" class="">corporativo</a></li>
+			</ul>				
+		</nav>
+		<!-- /menu principal -->
+
+
 		<!-- encontre uma Iplace perto de voce -->
 		<div id="lojas" class="">
 			<section id="" class="box-lojas">
@@ -18,7 +35,7 @@
 				<!-- txt intro Apple premium -->
 				<div class="container sobre">
 					<p>
-						A iPlace é uma loja especializada em produtos Apple e faz parte do programa APR (Apple Premium Reseller). Inaugurada em 2010, com a abertura simultânea de duas lojas no Rio Grande do Sul, a rede é uma parceria entre o Grupo Herval, responsável por 21 grandes empreendimentos, e a Apple. Hoje a rede contabiliza 100 lojas distribuídas em 16 estados do Brasil, consolidando-se como a maior APR do país em apenas 5 anos de mercado.
+						A iPlace é uma loja especializada em produtos Apple e faz parte do programa APR(Apple Premium Reseller). Hoje a rede contabiliza 100 lojas distribuídas em 14 estados do Brasil, consolidando-se como a maior APR do país em apenas 5 anos de mercado.
 					</p>
 				</div>
 				<!-- txt intro Apple premium -->				
@@ -27,7 +44,7 @@
 		<!-- /encontre uma Iplace perto de voce -->
 		
 		<!-- IPlace models -->
-		<section class="modelos">
+		<section class="modelos" id="sobre">
 			<h3 class="text-center tt-destaque">Uma rede completa para você</h3>
 			<hr>
 			
@@ -36,7 +53,22 @@
 				<img src="img/img-iplace.jpg" alt="" class="img-desktop">
 				<h5>iPlace</h5>
 				<p>
-					A iPlace é a maior Apple Premium Reseller do Brasil e a 2ª da América Latina. Está presente em 17 cidades, com 36 lojas preparadas para que os clientes possam conhecer e interagir com os produtos de maneira descontraída. 
+					A iPlace faz parte do programa de Revendedores
+					Premium Autorizados da Apple (Apple Premium Reseller), desenvolvida com os mesmos princípios de
+					qualidade, simplicidade e inovação da marca. E com
+					pouco mais de 5 anos no mercado já assume uma
+					posição de maior APR e a 2ª da América <br>
+					Latina. <br>
+					A marca está presente em 17 cidades com um total de
+					36 lojas em todo o Brasil. E um canal consolidade de e-commerce. <br>
+					Reconhecida pela qualidade, simplicidade e inovação
+					ligados a marca, as lojas iPlace e oferecem o mais alto
+					padrão de atendimento, com consultores especializados
+					e um ambiente preparado para que os clientes possam 
+					conhecer e interagir com os produtos de maneira
+					descontraída. <br>
+					Na iPlace o consumidor encontra também serviços
+					diferenciados que fortalecem o relacionamento entre os consumidores e a marca, como assistência técnica especializada, treinamentos personalizados e workshops gratuitos. 
 				</p>
 				<!-- <a href="#" title="Saiba Mais" class="saiba-mais ani" rel="">saiba mais</a> -->
 			</div>
@@ -44,7 +76,12 @@
 				<img src="img/img-iplace-mobile.jpg" alt="" class="img-desktop">
 				<h5>iPlace Mobile</h5>
 				<p>
-					A iPlace Mobile é a única Revendedora Autorizada mono marca da Apple no Brasil e a pioneira na América Latina. Conta com 64 lojas localizadas na sua grande maioria em cidades do interior levando assim a experiência Apple a todos os lugares do Brasil.
+					A iPlace é a única Revendedora Autorizada mono marca da Apple(Apple Authorized Reseller) no Brasil e a pioneira na América Latina. Diferente de demais revendedores autorizados oferece apenas produtos Apple e acessórios compatíveis com estes produtos. <br>
+					Desta forma a loja se posiciona e é percebida no mercado como uma referência Apple. Conta com 64 lojas localizadas na sua grande maioria em cidades do interior levando assim a experiência Apple a todos os <br>
+					lugares do Brasil. <br>
+					Na iPlace Mobile, assim como na iPlace, o cliente pode utilizar os produtos, manusear, navegar, tudo isso em um ambiente descontraído e interativo. A loja oferece a linha completa de produtos Apple: iPhone,iPad,iPod e MacBook, além de diversos acessórios para tornar a <br>
+					experiência Apple completa.
+
 				</p>
 				<!-- <a href="#" title="Saiba Mais" class="saiba-mais ani" rel="">saiba mais</a> -->
 			</div>
@@ -72,7 +109,7 @@
 		<!-- /toda linha Apple -->
 
 		<!-- carrossel -->
-		<div class="container pad0">
+		<div class="container pad0 hide">
 			<div id="carousel-example-generic" class="carousel slide carousel-sobre" data-ride="carousel">
 			  <!-- Indicators -->
 			  <ol class="carousel-indicators">
@@ -156,8 +193,8 @@
 		<!-- /carrossel -->
 		
 		<!-- mapa -->
-		<hr class="container">
-		<section class="mapa" id="mapa">
+		<hr class="container hide">
+		<section class="mapa hide" id="mapa">
 			<div class="container">
 				<div class="col-lg-6">
 					<div class="todo-brasil">
@@ -178,6 +215,23 @@
 			</div>
 		</section>
 		<!-- /mapa -->
+
+		<!-- educacional -->
+		<section class="educacional" id="educacional">
+			<div class="container">
+				<figure class="man-reader"></figure>
+				<div class="box-educacional">
+					<h5>
+						A melhor experiência em Tecnologia Educacional
+					</h5>
+					<p>
+						Em 2012 foi criada a iPlace Educacional, Authorised Education Reseller Apple, para ser um segmento especializado em projetos educacionais para todo o Brasil.
+					</p>
+					<a href="#" title="acesse o site e conheça" class="btn btn-default ani">acesse o site e conheça</a>
+				</div>
+			</div>
+		</section>
+		<!-- /educacional -->
 
 		<!-- vendas corporativas -->
 		<hr class="container">
@@ -270,28 +324,6 @@
 		</nav>
 		<!-- /consultores -->
 		
-		
-		<!-- educacional -->
-		<section class="educacional" id="educacional">
-			<div class="container">
-				<figure class="man-reader"></figure>
-				<div class="box-educacional">
-					<h5>
-						A melhor experiência em Tecnologia Educacional
-					</h5>
-					<p>
-						Em 2012 foi criada a iPlace Educacional, Authorised Education Reseller Apple, para ser um segmento especializado em projetos educacionais para todo o Brasil.
-					</p>
-					<a href="#" title="acesse o site e conheça" class="btn btn-default ani">acesse o site e conheça</a>
-				</div>
-			</div>
-		</section>
-		<!-- /educacional -->
-		
-		
-		
-
-
 		<!-- scripts -->
 		<script src="js/jquery-1.11.3.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>

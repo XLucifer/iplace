@@ -344,6 +344,7 @@ Autor: André Luz da Silva;
 	}
 
 	.tt-premium {
+		margin-top: 0;
 		font-size:48px;
 	}
 	
@@ -423,7 +424,7 @@ Autor: André Luz da Silva;
 	background:transparent !important;
 }
 
-/*bghover #BED62D border-color #BED62D  color #fff*/
+
 
 /***************************************************SESSOES*******************************************************************/
 
@@ -434,8 +435,10 @@ Autor: André Luz da Silva;
 	position: relative;
 	min-height: 599px;
 	margin-bottom: 30px;
+	margin-top: 60px;
 }
 .box-lojas {
+	border-top: 1px solid;
 	overflow: hidden;
 	padding:30px 0 0;
 	box-shadow:0 6px 10px rgba(0,0,0,.1);
