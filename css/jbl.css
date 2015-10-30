@@ -111,9 +111,12 @@ ul {
 .banners { 	
 	display: none;
 	cursor:pointer;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
 } 
 
-.banners .container {opacity: 0;}
+.banners .container {opacity: 0; width: 1201px;}
 @media (min-width: 1366px) {
 	.banners {
 		background: url(../img/sprite/banners.png) no-repeat top left;  

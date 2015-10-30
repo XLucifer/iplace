@@ -1958,17 +1958,11 @@ hr.container {padding:0;}
 
 	.desktop {display: block !important;}
 
-	.box-select {margin-right:15px;}
-	.box-select,.box-submit {
-		float: left;
-	}
-
 	.box-cartoes {width: 1141px; padding-top: 80px;}
 	.state-result div {margin: 0;}
 
 	.cartao {text-align: left;}
 	.state .col-lg-7 {padding: 0;}
-	.state select {width: 346px;}
 	.state input {width: 84px;}
 
 	.state hr {width: 464px;}
