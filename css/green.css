@@ -1,0 +1,246 @@
+ul,h1,h2,h3,h4,h5,h6, p {
+	margin:0;
+	padding: 0;
+}
+
+.capa-resistente {
+	padding:40px 0;
+	background-image: linear-gradient( to right, #121212 25%,#000 75% );
+	
+}
+
+.box-resistente h4 {
+	color:#EEF1F6;
+	font:400 42px "Open Sans";
+	margin-bottom: 20px;
+}
+
+.box-resistente .bt-comprar {
+	color:#222;
+	font:bold 22px/60px Arial;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-right: 20px;
+	background:#95C500;
+	width: 193px;
+	height: 60px;
+	text-align: center;
+}
+
+.box-resistente small {
+	font:italic 16px arial;
+	color:#666;
+}
+
+.itens {
+	overflow: hidden;
+	background:#EEF1F6;
+}
+
+.itens ul {
+	margin: 0 auto;
+}
+.itens li {
+	border-left: 1px solid #ddd;
+	vertical-align: middle;
+}
+.itens li:first-child {border:0;}
+.itens a {
+	color: #3F9246;
+	font:18px arial;
+	text-align: center;
+	display: block;
+	border-bottom: 1px solid #ddd;
+	padding: 10px 0;
+}
+.video {
+	margin: 0 auto;
+}
+
+.flex-video {
+	position: relative;
+	padding-top: 25px;
+	padding-bottom: 67.5%;
+	height: 0;
+	margin-bottom: 16px;
+	overflow: hidden;
+}
+ 
+.flex-video.widescreen { padding-bottom: 57.25%; }
+.flex-video.vimeo { padding-top: 0; }
+ 
+.flex-video iframe,
+.flex-video object,
+.flex-video embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.cabecalho article {
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+.cabecalho article h1 {
+	color:#89C53D;
+	font:400 48px/59px "Open Sans";
+	text-align: center;
+	padding-bottom: 40px;
+}
+.cabecalho article strong {
+	display: block;
+	text-transform: uppercase;
+	font-size: 55px;
+}
+.bto-comprar {
+	font:bold 24px/60px arial;
+	text-align: center;
+	color:#fff;
+	background: #222;
+	width: 193px;
+	height: 60px;
+	text-transform: uppercase;
+	display: block;
+	margin:0 auto;
+}
+
+.logo-green {
+	width: 218px;
+	height: 98px;
+	margin: 0 auto 20px;
+	background:url(../img/background/bg-logo-green.jpg) no-repeat;
+}
+
+.capas {
+	position: relative;
+}
+.capas figure {
+	-webkit-transition:all .9s ease-in;
+	-o-transition:all .9s ease-in;
+	transition:all .9s ease-in;
+}
+.capas figure:hover {
+	cursor:pointer;
+}
+
+
+.capas img {
+	display: block;
+	margin: 0 auto 20px;
+}
+
+.capas h6 {
+	color: #85929C;
+	padding-bottom: 27px;
+	font:16px arial;
+}
+.capas a {
+	text-transform: uppercase;
+	color:#fff;
+	font:bold 18px/60px arial;
+	width: 100%;
+	height: 60px;
+	background:#98C500;
+	display: block;
+	text-align: center;
+}
+
+.box-capas {padding:30px 0;}
+
+.box-capas a {width: 300px; margin: 0 auto;}
+
+@media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+	.flex-video { padding-top: 0; }
+}
+
+@media (min-width: 1200px) {
+	.capas .container {
+		width: 641px;
+		padding:0;
+		position: relative;
+	}
+	.capas figcaption {display: none;}
+	.capas figure:hover figcaption {
+		display: block;
+	}
+	.capas figure:hover {
+		position: absolute;
+		right: 0;
+		top:-13px;
+		box-shadow: 0px 1px 13px -1px rgba(0,0,0,.2);
+	}
+	
+	.capas figure {
+		width: 322px;
+		height: 600px;
+		float: right;
+		background: #fff;
+		
+	}
+	.capas img {
+		display: block;
+		margin:60px auto 32px;
+		overflow: hidden;
+	}
+	.box-capas {
+		background: url(../img/background/bg-capas.jpg) no-repeat center;
+		height: 600px;
+		padding:0;
+	}
+	.box-capas a {width: 100%;}
+	.mobol {display: none !important;}
+	.cabecalho article {
+		width: 300px;
+		margin-top:90px;
+		float: right;
+		margin-bottom: 0;
+	}
+	.cabecalho article h1 {color:#fff; text-align: right;}
+	.cabecalho article strong {font-size: 65px;}
+	
+	.bto-comprar {
+		float: right;
+	}
+	.itens {padding-bottom: 114px;}
+	.itens ul {
+		width: 1010px;
+		padding:50px 0 72px;
+	}
+
+	.itens li {
+		display: inline-block;
+		padding:0 39px;
+	}
+	.itens a {
+		padding: 0;
+		text-align: left;
+		border:0;
+	}
+	.video {
+		width: 884px;
+		height: 498px;
+	}
+	.capa-resistente {
+		min-height: 639px;
+		padding: 0;
+	}
+	.box-resistente h4 {
+		width: 565px;
+		margin-bottom: 44px;
+	}
+	.box-resistente {
+		background: #000 url(../img/background/bg-martelo.jpg) no-repeat top center;	
+		min-height: 639px;
+	}
+	.container-resistente {
+		float: right;
+		margin-top: 136px;
+	}
+
+	.cabecalho {
+		background:url(../img/background/bg-green.jpg) no-repeat top center;
+		height: 663px;
+	}
+}
