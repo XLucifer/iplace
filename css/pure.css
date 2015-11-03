@@ -2,6 +2,10 @@ ul,h1,h2,h3,h4,h5,h6, p {
 	margin:0;
 	padding: 0;
 }
+li {
+	list-style: none;
+}
+.desktop {display: none;}
 
 .ani {
 	-webkit-transition: all .25s;
@@ -114,6 +118,10 @@ ul,h1,h2,h3,h4,h5,h6, p {
 	-o-transform: translate(-50%,-50%);
 	transform: translate(-50%,-50%);
 }
+.desktop .video {
+	width: 835px;
+	height: 468px;
+}
 
 /*duraltek*/
 .duraltek {
@@ -147,8 +155,7 @@ ul,h1,h2,h3,h4,h5,h6, p {
 
 #myCarousel {
 	width: 526px;
-	margin: 0;
-		
+	margin: 0;		
 	position: absolute;
 	top:50%;
 	left: 50%;
@@ -157,10 +164,6 @@ ul,h1,h2,h3,h4,h5,h6, p {
 	-o-transform: translate(-50%,-50%);
 	transform: translate(-50%,-50%);
 }
-.carousel-inner {
-	
-}
-
 
 .carousel-indicators {
 	bottom: -100px;
@@ -216,29 +219,126 @@ ul,h1,h2,h3,h4,h5,h6, p {
 }
 
 @media (min-width: 1200px) {
+	.container {max-width: 1200px;}
+
+	.mobol {display: none;}
+	.desktop {display: block;}
 
 
+	.cabecalho {
+		background:url(../img/background/bg-cabecalho-pure.jpg) no-repeat top center;
+		min-height: 878px;
+	}
+	.cabecalho h1 {
+		width:512px;
+		text-align: left;
+		left: 73%;
+		top:74%;
+	}
+	.cabecalho .bt-comprar {
+		left: 78%;
+		top:86%;
+	}
+	.box-cabecalho {
+		max-width: 1920px;
+		margin: 0 auto;
+	}
+
+	header {
+		overflow: hidden;
+		width: 920px;		
+	}
+
+	.conheca {
+		min-height: 792px;
+		background:url(../img/background/bg-conheca.jpg) no-repeat top center;
+	}
 
 
+	.duraltek.desktop {
+		background:url(../img/background/bg-duraltek-desktop.jpg) no-repeat top center;
+		min-height: 663px;
+	}
 
+	.duraltek h2 {
+		text-align: left;
+		top:72%;
+	}
+	.duraltek .bt-comprar {
+		top:89%;
+		left: 10.2%;
+	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	.modelos {
+		background:url(../img/background/bg-modelos.jpg) no-repeat top center;
+		min-height: 591px;
+		position: relative;
+	}
 	
+	.modelos figure {
+		width: 380px;
+		height: 481px;
+		background: #fff;
+		border-radius: 10px;
+		padding-top: 50px;
+	}
+	.modelos nav {
+		padding-top: 55px;
+	}
+
+	.modelos img {
+		display: block;
+		margin:0 auto 45px;
+		overflow: hidden;
+	}
+
+	.modelos h4 {
+		float: left;
+		color:#999;
+		padding-left: 28px;
+		line-height: 35px;
+	} 
+
+	.modelos .bt-comprar {
+		border-radius: 5px;
+		font: 14px/33px arial;
+		margin-right:25px;
+		width: 104px;
+		height: 33px;
+		float: right;
+		position: static;
+		-webkit-transform: translate(0,0);
+		-ms-transform: translate(0,0);
+		-o-transform: translate(0,0);
+		transform: translate(0,0);
+	}
+
+}
+
+@media (min-width: 1920px) {
+	.cabecalho h1 {
+		width:512px;
+		text-align: left;
+		left: 66%;
+		top:74%;
+	}
+	.cabecalho .bt-comprar {
+		left: 70%;
+		top:86%;
+	}	
+
+	.duraltek h2 {
+		text-align: left;
+		left:53%;
+	}
+}
+
+@media (min-width: 2200px) {
+	.cabecalho .bt-comprar {
+		left: 14.2%;		
+	}	
+
+	.duraltek h2 {		
+		left:58%;
+	}
 }
