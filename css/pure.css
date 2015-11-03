@@ -233,7 +233,8 @@ li {
 		width:512px;
 		text-align: left;
 		left: 73%;
-		top:74%;
+		top:69%;
+		opacity: 0;
 	}
 	.cabecalho .bt-comprar {
 		left: 78%;
@@ -262,7 +263,8 @@ li {
 
 	.duraltek h2 {
 		text-align: left;
-		top:72%;
+		top:65%;
+		opacity: 0;
 	}
 	.duraltek .bt-comprar {
 		top:89%;
