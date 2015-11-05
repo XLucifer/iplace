@@ -192,9 +192,11 @@ ul {
 	text-align: center;
 	min-height: 450px;
 }
+.bannersjbl {display: none;}
 @media (min-width: 1200px) {
 	.produtos h3 {padding-top: 134px;}
 	.list-produtos .col-lg-2 {width: 269px;}
+	.bannersjbl {display: block;}
 }
 @media (min-width: 1920px) {
 	.list-produtos .col-lg-2 {width: 380px;}

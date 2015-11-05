@@ -150,15 +150,12 @@ ul {
 /*banners*/
 
 .banners { 	
-	display: none;
 	cursor:pointer;
 } 
 
 .banners .container {opacity: 0;}
 @media (min-width: 1366px) {
-	.banners {
-		
-		display: block;
+	.banners {		
 		height: 908px;
 		clear: both;
 		width: 1201px;
@@ -429,7 +426,7 @@ ul {
 
 .bt-conheca {
 	display: block;
-	margin: 0 auto;
+	margin: 0 auto 50px;
 	width: 214px;
 }
 
@@ -507,4 +504,21 @@ ul {
 .fig-banner em {
 	font-size: 12px;
 	padding-top: 5px;
+}
+
+@media (max-width: 480px) {
+	.fig-banner {width: 448px;}
+	.fig-banner i {display: none;}
+	.fig-banner a {
+		width: 86px;
+		height: 22px;	
+		text-indent: 19px;
+		font-size: 10px;
+		line-height: 20px;
+	}
+}
+@media (min-width: 320px) and (max-width: 479px) {
+	.fig-banner {
+		width: 300px;
+	}
 }

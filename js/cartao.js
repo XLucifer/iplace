@@ -1,6 +1,8 @@
 $(document).ready(function(){
 	barraAtivo();
 	tween();
+	state();
+
 
 	
 
@@ -51,4 +53,23 @@ function tween(){
 // barra ativo
 function barraAtivo(){
 	$(".barra-ativo").width($(".ativo").width());
+}
+
+function state(){
+	$("#city").change(function(){
+		$("option:selected").each(function(){
+			var valor = $(this).val();
+
+			console.log(valor);
+
+			if(valor == "uf"){
+				$("dl").show();
+			}
+			else {
+				$("dl").hide();	
+				$("dl[rel^='"+(valor)+"']").show();	
+			}
+			
+		});
+	});
 }
