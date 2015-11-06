@@ -82,11 +82,31 @@
 	color:#fff;
 	font:600 40px "Open Sans";
 }
+.mobol.mais-produtos {
+	min-height: 305px;
+}
+.mobol.mais-produtos h4 {
+	font-size: 18px;
+	padding:40px 0 30px 0;
+	margin: 0;
+}
 .mais-produtos ul {padding: 0;}
 .mais-produtos li {
 	height: 66px;
 	list-style: none;
 	margin-bottom: 1px;
+}
+.mobol.mais-produtos li {
+	height: 29px;
+	width: 29px;
+	border-radius: 100%;
+	background: #fff;
+	border:0;
+	margin-right: 10px;
+}
+.mobol.mais-produtos li.active {background:#FFA64D;}
+.mobol.mais-produtos .carousel-indicators {
+	bottom: -85px;
 }
 
 .mais-produtos a {
@@ -97,13 +117,23 @@
 	font:600 16px/66px "Open Sans";
 	text-align: center;
 }
+.mobol.mais-produtos a {
+	max-width: 337px;
+	margin: 0 auto;
+}
 
 .mais-produtos a:hover {
 	text-decoration: none;
 	background: #FF8000;
 }
 
+.embed-responsive {
+	max-width: 588px;
+	margin: 38px auto;
+}
+
 @media (min-width: 1200px) {
+	.embed-responsive {margin: 0;}
 	.mais-produtos {padding: 0;}
 	.mais-produtos a {width:235px;}
 	.mais-produtos ul {
@@ -156,6 +186,9 @@
 
 .box-video iframe {
 	height: 346px; 
+	width: 100%;
+	max-width: 588px;
+	margin:0 auto;
 }
 
 @media (min-width: 1200px) {
@@ -183,7 +216,7 @@
 .cabecalho {
 	margin: 0 auto;
 	position: relative;
-	min-height: 621px;	
+	min-height: 1355px;	
 }
 
 
@@ -208,6 +241,7 @@
 
 .cabecalho iframe {
 	height: 484px;
+	
 	position: absolute;
 	z-index: 2;
 	top:45%;	
@@ -234,4 +268,41 @@
 
 @media (min-width: 1304px) {
 	.sprite-belkin.bg-destaque-belkin {width: 1304px;}
+}
+
+.belkin-topo {
+	background:url(../img/background/bg-04.png) no-repeat top;
+	-webkit-background-size: 588px 907px;
+	background-size: 588px 907px;
+	height: 907px;
+	position: relative;
+}
+.belkin-topo .comprar {
+	background:url(../img/background/bto-comprar.png) no-repeat;
+	width: 216px;
+	height: 87px;
+	z-index: 3;
+	text-indent: -9000em;
+	display: block;
+	position: absolute;
+	bottom:-21px;
+	left:59%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.belkin-topo iframe {
+	height: 484px;
+	max-width: 588px;
+	width: 100%;
+	position: absolute;
+	z-index: 2;
+	top:126%;	
+	left:50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
 }
