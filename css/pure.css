@@ -75,7 +75,7 @@ li {
 	text-align: center;
 	font:400 32px "Open Sans";
 	position: absolute;
-	top:84%;
+	top:77%;
 	left:50%;
 	-webkit-transform: translate(-50%,-50%);
 	-ms-transform: translate(-50%,-50%);
@@ -133,7 +133,7 @@ li {
 	color:#fff;
 	text-align: center;
 	font:400 32px "Open Sans";
-	top:82%;
+	top:74%;
 	width: 100%;
 }
 .duraltek h2 em {
@@ -245,11 +245,6 @@ li {
 		margin: 0 auto;
 	}
 
-	header {
-		overflow: hidden;
-		width: 920px;		
-	}
-
 	.conheca {
 		min-height: 792px;
 		background:url(../img/background/bg-conheca.jpg) no-repeat top center;
@@ -278,7 +273,7 @@ li {
 	}
 	
 	.modelos figure {
-		width: 380px;
+		width: 363px;
 		height: 481px;
 		background: #fff;
 		border-radius: 10px;

@@ -8,7 +8,7 @@ $(document).ready(function() {
       $(this).parent("li").addClass("ativo");
       getnav = $(this).attr("href");
       $("html,body").animate({
-        scrollTop: $(getnav).offset().top 
+        scrollTop: $(getnav).offset().top -100 
       }, 900);  
       
       return false;

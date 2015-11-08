@@ -434,18 +434,25 @@ ul {
 	overflow: hidden;
 	margin: 0 auto;
 }
-@media (min-width: 1200px) {
-	.box-topo {width: 1200px;}
-}
-
 .fig-banner {
 	overflow: hidden;
 	max-height: 443px;
-	width: 590px;
-	position: relative;
-	float: left;
-	margin: 0 10px 10px 0;
+	width: 575px;
+	position: relative;	
+	margin: 0 auto 20px;
 }
+@media (min-width: 1200px) {
+	.box-topo {width: 1200px;}
+	.fig-banner {
+		overflow: hidden;
+		max-height: 443px;
+		width: 575px;
+		position: relative;
+		float: left;
+		margin: 0 10px 10px 0;
+	}
+}
+
 .fig-banner a {
 	box-shadow: 0px 1px 0px #000;
 	position: absolute;
