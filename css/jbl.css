@@ -18,6 +18,11 @@
 .mobol {display: block;}
 .desk {display: none !important;}
 
+.img-jbl-mobol {
+	margin:0 auto;
+	display: block;
+}
+
 @media (min-width:1200px) {
 	.desk {display: block !important;}
 	.mobol {display: none !important;}
@@ -337,6 +342,19 @@ ul {
 
 .conteudo {
 	clear: both;	
+}
+
+
+.mobol.bg {
+	background:url(../img/background/bg-03.jpg) repeat-x;
+	height: 70px;
+	margin-top: -291px;
+	margin-bottom: 234px;
+}
+@media (max-width:343px)  {
+	.mobol.bg {
+		margin: -317px 0 234px 0;
+	}	
 }
 @media (min-width: 1200px) {
 	.conteudo {

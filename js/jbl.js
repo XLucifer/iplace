@@ -14,7 +14,7 @@ function tween(){
 
     if($(window).scrollTop() + ($(window).height()) > e1 && !$('#cabecalho').hasClass('anim') ){
         $('#cabecalho').addClass('anim');
-          TweenMax.fromTo($('div:not(".desk")',"#cabecalho"), .9, {y: 20, z: 1, alpha: 0}, {y: 0, z: 0, alpha: 1, ease: Quart.easeOut});
+          TweenMax.fromTo($('div:not(".esc")',"#cabecalho"), .9, {y: 20, z: 1, alpha: 0}, {y: 0, z: 0, alpha: 1, ease: Quart.easeOut});
     }
 
     if($(window).scrollTop() + ($(window).height()) > e2 && !$('.acessorios').hasClass('anim') ){
