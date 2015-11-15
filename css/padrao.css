@@ -1,0 +1,212 @@
+/*************************
+Autor: André Luz da Silva;
+/***************************/
+
+* {
+	margin:0;
+	padding:0;
+}
+
+.ani {
+	-webkit-transition: all .25s;
+	-o-transition: all .25s;
+	transition: all .25s;
+}
+
+ul {
+	list-style: none;
+}
+
+.replace {
+	text-indent: -9000em;
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.clear {
+	clear: both;
+} 
+
+.over {overflow: hidden;}
+
+.pad0 {padding: 0;}
+
+.sprite-padrao { background: url(../img/sprite/sprite-padrao.png) no-repeat top left; width: 107px; height: 107px;  } 
+.sprite-padrao.a { 
+	background-position: 0 0; 
+	width: 254px; 
+	height: 137px; 
+	display: block;
+	margin: 0 auto;
+} 
+.sprite-padrao.b { 
+	background-position: 0 -187px; 
+	width: 84px; 
+	height: 119px; 
+	display: block;
+	margin: 0 auto;
+} 
+.sprite-padrao.c { background-position: 0 -356px; width: 98px; height: 126px; } 
+.sprite-padrao.d { background-position: 0 -532px; width: 153px; height: 190px; } 
+.sprite-padrao.e { background-position: 0 -748px; width: 284px; height: 165px; } 
+.sprite-padrao.f { background-position: 0 -939px; width: 295px; height: 141px; } 
+.sprite-padrao.g { 
+	background-position: 0 -1178px; 
+	width: 595px; 
+	height: 348px; 
+	margin-bottom: 30px;
+} 
+.sprite-padrao.h { background-position: 0 -1576px; } 
+.sprite-padrao.i { background-position: 0 -1733px; } 
+
+#cabecalho h2 {
+	color:#333;
+	font:36px arial;
+	margin:20px 0;
+	text-align: center;
+}
+
+.produtos li {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.alguns a {
+	color:#333;
+}
+
+.alguns div {
+	height: 190px !important;
+	margin:0 auto 20px;
+}
+
+.sprite-padrao.c {
+	background-position: 0 -294px;
+}
+
+.alguns figcaption {
+	font:20px arial;
+	color: #666;
+	text-align: center;
+	display: block;
+}
+
+.sprite-padrao.g {margin:0 auto 20px;}
+
+.novo h3 {
+	font:25px arial;
+	color:#333;
+	padding:30px 0 20px 30px;
+}
+
+.novo a {
+	margin-left: 40px;
+	color:#c5c5c5;
+}
+.novo a:hover {
+	background: none;
+	border-color:#B0E12A;
+	color:#B0E12A;
+}
+
+.btn-default:focus,
+.btn-default:active {
+	border-color:#333 !important;
+	color:#333 !important;
+	background:transparent !important;
+}
+
+.novo a:last-child {margin-left: 10px;}
+
+.banricoop {
+	height: 100%;
+	display: block;
+}
+
+.consultores {
+	border:1px solid #ccc;
+	padding-top: 34px;
+}
+
+.consultores h4 {
+	text-align: center;
+	font:42px arial;
+	color:#333;
+	margin-bottom: 20px;
+}
+
+.consultores h5 {
+	text-align: center;
+	color:#999;
+	font:20px arial;
+}
+
+.consultores div {margin: 0 auto;}
+
+.consultores figure {margin-bottom: 20px;}
+
+.consultores small {
+	display: block;
+	text-align: center;
+	font:13px/20px arial;
+	color:#999;
+}
+
+.consultores a {
+	color:#999;
+	display: block;
+	text-align: center;
+	font:13px/20px arial;
+}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1200px;
+		padding: 0;
+	}
+
+	.sprite-padrao.a {margin-left: 0;margin-right:0;}
+
+	#cabecalho h2 {
+		margin-top: 50px;
+		text-align: left;
+	}
+
+	.sprite-padrao.b {
+		margin-top: 32px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.produtos li {
+		float: left;
+	}
+
+	.produtos li:nth-child(1)  {
+		width: 173px;
+		margin-right: 50px;
+	}
+	.produtos li:nth-child(2)  {
+		width: 153px;
+		margin-right: 84px;
+	}
+	.produtos li:nth-child(3)  {
+		width: 284px;
+		margin-right: 106px;
+	}
+	.produtos li:nth-child(4)  {
+		width: 295px;
+	}
+
+	.novo h3 {
+		padding:50px 0 0 40px;
+		overflow: hidden;
+	}
+
+	.consultores {height: 240px;}
+
+	.consultores h4 {
+		text-align: left;
+	}
+}
